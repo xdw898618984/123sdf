@@ -1,0 +1,63 @@
+[33mcommit fc6e0fae0819738a2269205af82d32d8f97e3a20[m
+Author: xdw <898618984@qq.com>
+Date:   Sat Aug 5 20:19:26 2017 +0800
+
+    你好
+
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex a0275e9..1638ab5 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -38,8 +38,8 @@[m
+       <file leaf-file-name="index1.html" pinned="false" current-in-tab="true">[m
+         <entry file="file://$PROJECT_DIR$/index1.html">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="407">[m
+[31m-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />[m
+[32m+[m[32m            <state relative-caret-position="347">[m
+[32m+[m[32m              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />[m
+               <folding />[m
+             </state>[m
+           </provider>[m
+[36m@@ -197,12 +197,12 @@[m
+       <option name="number" value="Default" />[m
+       <option name="presentableId" value="Default" />[m
+       <updated>1501934570797</updated>[m
+[31m-      <workItem from="1501934572887" duration="735000" />[m
+[32m+[m[32m      <workItem from="1501934572887" duration="854000" />[m
+     </task>[m
+     <servers />[m
+   </component>[m
+   <component name="TimeTrackingManager">[m
+[31m-    <option name="totallyTimeSpent" value="735000" />[m
+[32m+[m[32m    <option name="totallyTimeSpent" value="854000" />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+     <frame x="47" y="170" width="911" height="698" extended-state="0" />[m
+[36m@@ -243,8 +243,8 @@[m
+     </entry>[m
+     <entry file="file://$PROJECT_DIR$/index1.html">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="407">[m
+[31m-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />[m
+[32m+[m[32m        <state relative-caret-position="347">[m
+[32m+[m[32m          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />[m
+           <folding />[m
+         </state>[m
+       </provider>[m
+[1mdiff --git a/index1.html b/index1.html[m
+[1mindex 48bd0e9..33c156b 100644[m
+[1m--- a/index1.html[m
+[1m+++ b/index1.html[m
+[36m@@ -17,6 +17,10 @@[m
+ <button> 登录</button>[m
+ <button> 登录</button>[m
+ <button> 登录</button>[m
+[32m+[m[32m<button> hsh</button>[m
+[32m+[m[32m<button> j</button>[m
+[32m+[m[32m<button> 登录gdf</button>[m
+[32m+[m[32m<button> gd</button>[m
+ <script>    </script>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
