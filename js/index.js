@@ -21,7 +21,7 @@ function initialize() {
         var dateNow=show();
         var setmp = '<li style="position: relative">' +
             '<input type="checkbox" style="float: left;position: absolute; top: 22px; left:34px;">'+
-            '<div class="div1"> '+
+            '<div class="click"> '+
             '<span class="num1">'+show()+'</span>' +
             ' <span class="num2">内部通报</span>' +
             ' <span class="num3">待定待定待定待定待定待定待定</span>' +
@@ -54,9 +54,10 @@ function initialize() {
 initialize();
 //点击全选，check和背景颜色
 $("#down").click(function () {
-$(".results-ul li").css({
+$(".results-ul li .click").css({
     background:"#defd78",
     borderRadius:10+"px",
+    overflow:"hidden",
 })
     var input=$("input")
     for (var i = 0; i < input.length; i++) {

@@ -5,11 +5,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>岗位页面</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/post.css">
+    <title>岗位上报信息工具</title>
 </head>
 
 <body>
-<div>岗位编辑页面</div>
+<section class="nav">
+    <div><h1>岗位信息上报工具</h1></div>
+</section>
+<section class="header">
+    <div class="header_left">
+        <h2>岗位上报信息编辑</h2>
+
+        <div class="content">
+            <div class="warning"><span>告警情况:  </span><input type="text"></div>
+            <div class="pretreatment"><span>预处理情况:</span>
+                <div class="text_enter">
+                <textarea name="" id="oneT" cols="30" rows="3"></textarea>
+                <p><textarea name="" id="twoT" cols="30" rows="3"></textarea></p>
+                <textarea name="" id="threeT" cols="30" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="trouble"><span>是否有故障时限:</span>
+                <input type="checkbox" checked="checked"> <span>有</span>
+            &nbsp   &nbsp
+                <input type="checkbox"> <span>无</span>
+            </div>
+            <div class="time"><span>故障时限:</span>
+
+                <div class="time_enter">
+                <textarea name="" id="timeT" cols="30" rows="3"></textarea>
+                </div>
+            </div>
+            
+            <div class="complain">
+                <span>投诉情况:</span>
+                <input type="text">
+            </div>
+            <div class="dispose">
+                <span>处理情况:</span> <input type="text">
+            </div>
+            <div class="project"><span>工程核查:</span>
+                <input type="checkbox" checked="checked"> <span>无</span>
+                &nbsp;    &nbsp;
+                <input type="checkbox"><span>有</span>
+                <input type="text">
+            </div>
+            <div class="case"><span>报障情况:</span>
+                <div class="case_enter">
+                <input type="checkbox" checked="checked"> <span>核准室</span>
+                <input type="checkbox" checked="checked"> <span>互联网室</span>
+                <input type="checkbox"><span>安增室</span>
+                <input type="checkbox"><span>性能室</span>
+                <input type="checkbox"><span>资配室</span>
+                <input type="checkbox"><span>网管室</span>
+                <input type="checkbox"><span>传动室</span>
+                <input type="checkbox"><span>无忧</span>
+                <input type="checkbox"><span>省信息系统部</span>
+                <input type="checkbox"><span>客响</span>
+                <input type="checkbox"><span>传动室</span>
+                <input type="checkbox"><span>无线室</span>
+                <input type="checkbox"><span>数据室</span>
+                <input type="checkbox"><span>综维</span>
+                    <div class="case_down">
+                        <span>省核维室信息联络人:</span><input type="text">
+                        <span>省互联网室信息联络人:</span><input type="text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="city"><span>地市:</span>
+                <select name="" id="">
+                    <option value="">广州</option>
+                    <option value="">中山</option>
+                    <option value="">深圳</option>
+                    <option value="">佛山</option>
+                </select>
+                
+                <span>广州联系人</span><input type="text">
+
+            </div>
+
+            <div class="testing">
+                <span>拨测结果:</span>
+                <div class="testing_enter">
+                <div>
+                    <input type="checkbox" checked="checked"><span>正常</span><input type="text" placeholder="拨测情况说明">
+                </div>
+                <div>
+                <input type="checkbox" ><span>失败</span><input type="text" placeholder="拨测情况说明">
+                </div>
+                </div>
+            </div>
+            <div class="save">
+                <p>保存推送</P> <i class="push"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="header_right">
+        <div class="right_center">
+            <h2>预处理模板情况</h2>
+            <div class="right_content">
+
+                <p>1、家宽故障</p>
+                <p>检查OLT、BRAS下带用户数</p>
+                <p>上联SW、BNG端口流量</p>
+                <p>互感平台用户是否在线</p>
+                <p>工程核查</p>
+
+                <p>2、核心网故障</p>
+                <p>智能研判创建案例</p>
+                <p>当前网页性能指标</p>
+                <p>工程核查</p>
+                <p>拨测</p>
+                <p>3、互联网故障</p>
+                <p>核查端口状态/流量/光功率/描述</p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+<section class="footer">
+    <h2>OMC语音翻译</h2>
+    <div class="telephone">
+        <span>主叫号码:</span><input type="text">
+        <span>被叫号码:</span><input type="text">
+        <span>确然开始</span>
+        <span>确然结束</span>
+    </div>
+    <div class="footer_enter">
+
+
+    </div>
+
+</section>
 </body>
 
 </html>
