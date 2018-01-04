@@ -45,6 +45,7 @@ body {
     left: 72px;
     top: 0px;
 
+
 }
 .header .add {
     margin-left: 125px;
@@ -82,7 +83,7 @@ body {
     position: absolute;
     top:0;
     left: 0;
-    z-index: -88;
+    /*z-index: -88;*/
 }
 /*.header .left .header_date{*/
     /*position: absolute;*/
@@ -274,7 +275,7 @@ select {
     -webkit-appearance:none;
     /*在选择框的最右侧中间显示小箭头图片*/
 
-    background: url("../img/6.png") no-repeat   ;
+    /*background: url("../img/6.png") no-repeat   ;*/
     /*为下拉小箭头留出一点位置，避免被文字覆盖*/
     padding-right: 14px;
 

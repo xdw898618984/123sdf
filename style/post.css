@@ -44,9 +44,6 @@ textarea{
     float: right;
     width: 30%;
     height: 100%;
-    /*background: yellow;*/
-    box-sizing: border-box;
-    border:1px dashed red;
 }
 .header .header_left h2{
     height: 40px;
@@ -209,24 +206,36 @@ textarea{
     width: 100%;
     margin-bottom: 50px;
     text-align: center;
+
 }
-.header .header_left .content .save span{
+.header .header_left .content .save:hover div{
+    color: #befd78;
+}
+.header .header_left .content .save:hover .push{
+    background: url("../img/imgone.png") no-repeat -843px -236px;
+    position: absolute;
+    width: 46px;
+    height: 42px;
+    left: -25px;
+    top: -9px;
+}
+.header .header_left .content .save>div{
     font-size:16px;
     color: #000;
-}
-.header .header_left .content .save.save_enter{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+
+    margin-left: 50%;
 }
-.header .header_left .content .save.save_enter .push{
+
+.header .header_left .content .save .push{
 
     background: url("../img/imgone.png") no-repeat -843px -285px;
     position: absolute;
     width: 46px;
     height: 44px;
-    left: 0;
-    top: 0;
+    left:-25px;
+    top: -9px;
 }
 
 
@@ -250,7 +259,6 @@ textarea{
     height: 100%;
     margin-right: 20%;
     margin-left: 20%;
-    background: red;
 
 }
 .header .header_right .right_center>h2{
@@ -258,14 +266,18 @@ textarea{
     height: 40px;
 }
 .header .header_right .right_center .right_content{
-    background: pink;
     width: 100%;
     height:370px;
 }
-
+.header .header_right .right_center .right_content .second{
+    margin-top:20px;
+}
+.header .header_right .right_center .right_content .below{
+    margin-top:20px;
+}
 .footer{
     margin-left: 7%;
-    background: yellow;
+    /*background: yellow;*/
     width: 92%;
     height: 290px;
 }
@@ -273,8 +285,97 @@ textarea{
 text-align: center;
     font: normal bold 24px Microsoft YaHei,sans-serif;
     margin: 16px auto;
-    background: red;
 }
+
+.footer .telephone{
+
+}
+
+.footer .telephone input{
+    width: 25%;
+    height: 24px;
+
+ }
+.footer .telephone input:first-of-type{
+    margin-right: 30px;
+}
+.footer .telephone .telephone_right{
+     display: inline-block;
+     float: right;
+     margin-right:5%;
+    width: 250px;
+
+ }
+.footer .telephone .telephone_right .a{
+    display: inline-block;
+    float: right;
+    /*margin-left:5%;*/
+    width: 100px;
+    /*background: yellow;*/
+
+}
+.footer .telephone .telephone_right .b{
+    display: inline-block;
+    float: left;
+padding-right: 0px;
+    margin-right:0px;
+
+
+}
+.footer .telephone .telephone_right .a span {
+
+    position: relative;
+
+}
+
+.footer .telephone .telephone_right .a:hover span{
+    color: #befd78;
+
+}
+.footer .telephone .telephone_right .a span .front{
+    /*color: #befd78;*/
+
+    position:absolute ;
+    background: url("../img/imgone.png") no-repeat -581px -289px;
+    width: 35px;
+    height: 34px;
+    left: -35px;
+    top: -8px;
+}
+.footer .telephone .telephone_right .a:hover span .front{
+    position:absolute ;
+    background: url("../img/imgone.png") no-repeat -581px -236px;
+    width: 35px;
+    height: 34px;
+    left: -35px;
+    top: -8px;
+}
+.footer .telephone .telephone_right .b span {
+
+    position: relative;
+
+}
+.footer .telephone .telephone_right .b:hover span{
+    color: #befd78;
+
+}
+.footer .telephone .telephone_right .b span .rear{
+    position:absolute ;
+    background: url("../img/imgone.png") no-repeat -513px -289px;
+    width: 35px;
+    height: 34px;
+    left: -35px;
+    top: -8px;
+}
+.footer .telephone .telephone_right .b:hover span .rear{
+    position:absolute ;
+    background: url("../img/imgone.png") no-repeat -513px -236px;
+    width: 35px;
+    height: 34px;
+    left: -35px;
+    top: -8px;
+}
+
 .footer .footer_enter{
     width: 100%;
     height: 154px;
@@ -282,20 +383,19 @@ text-align: center;
     margin-top:26px;
     overflow-x: hidden;
     overflow-y: auto;
-
-
 }
+
 .footer_enter::-webkit-scrollbar {/*滚动条整体样式*/
     width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
     height: 7px;
 }
 .footer_enter::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
     border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(255,0,255,0.2);
+    background: rgba(255,0,0,0.2);
 }
 .footer_enter::-webkit-scrollbar-track {/*滚动条里面轨道*/
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(255,255,0,0.2);
     border-radius: 0;
-    background: rgba(0,0,0,0.1);
+    background: rgba(255,255,0,0.1);
 }
