@@ -278,8 +278,18 @@ select {
     /*background: url("../img/6.png") no-repeat   ;*/
     /*为下拉小箭头留出一点位置，避免被文字覆盖*/
     padding-right: 14px;
+    background-color: rgb(162,233,255);
+    opacity: 0.8;
+    font-size: 14px;
+    border-radius: 5px;
 
 }
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
 select::-ms-expand { display: none; }
 
+input{
+    background-color: rgb(162,233,255);
+    opacity: 0.8;
+    font-size: 14px;
+    border-radius: 5px;
+}

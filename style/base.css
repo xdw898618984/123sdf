@@ -3,14 +3,15 @@
     padding: 0;
 }
 body {
-    width: 1366px;
+    width: 100%;
     height: 768px;
+    overflow: hidden;
     background-image: url(../img/bg.png);
-    scrollbar-arrow-color:#f2f2f3;  /*上下箭头*/
-    scrollbar-track-color:#1589ce;  /*底层背景色*/
-    scrollbar-face-color:#27aeff;   /*滚动条前景色*/
-    scrollbar-Shadow-color:#1589ce; /*滚动条边线色*/
-    overflow-y:scroll; overflow-x:hidden;table-layout: fixed;word-wrap:break-word;word-break:break-all;
+    /*scrollbar-arrow-color:#f2f2f3;  !*上下箭头*!*/
+    /*scrollbar-track-color:#1589ce;  !*底层背景色*!*/
+    /*scrollbar-face-color:#27aeff;   !*滚动条前景色*!*/
+    /*scrollbar-Shadow-color:#1589ce; !*滚动条边线色*!*/
+    /*overflow-y:scroll; overflow-x:hidden;table-layout: fixed;word-wrap:break-word;word-break:break-all;*/
 }
 li{
     list-style: none;
