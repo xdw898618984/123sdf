@@ -85,15 +85,6 @@ body {
     left: 0;
     /*z-index: -88;*/
 }
-/*.header .left .header_date{*/
-    /*position: absolute;*/
-    /*width: 0;*/
-    /*height: 0;*/
-    /*border:15px solid;*/
-    /*border-color: red transparent transparent transparent;*/
-    /*top: 7px;*/
-    /*right: 7px;*/
-/*}*/
 .header .right {
     margin-left: 50px;
     font-size: 20px;

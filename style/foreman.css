@@ -1,16 +1,22 @@
-body{
+body {
     width: 100%;
     height: 768px;
-    overflow-y:scroll; overflow-x:hidden;table-layout: fixed;word-wrap:break-word;word-break:break-all;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: break-all;
 }
-input{
-    background-color: rgb(162,233,255);
+
+input {
+    background-color: rgb(162, 233, 255);
     opacity: 0.8;
     font-size: 14px;
     border-radius: 5px;
 }
-textarea{
-    background-color: rgb(162,233,255);
+
+textarea {
+    background-color: rgb(162, 233, 255);
     opacity: 0.8;
     font-size: 14px;
     border-radius: 5px;
@@ -23,71 +29,80 @@ select {
     /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
     border: solid 1px #000;
     /*很关键：将默认的select选择框样式清除*/
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     /*在选择框的最右侧中间显示小箭头图片*/
-
     /*background: url("../img/6.png") no-repeat   ;*/
     /*为下拉小箭头留出一点位置，避免被文字覆盖*/
     padding-right: 14px;
-    background-color: rgb(162,233,255);
+    background-color: rgb(162, 233, 255);
     opacity: 0.8;
     font-size: 14px;
     border-radius: 5px;
-
 }
+
+
 /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-select::-ms-expand { display: none; }
 
+select::-ms-expand {
+    display: none;
+}
 
-.nav{
-/*background: red ;*/
+.nav {
+    /*background: red ;*/
     width: 100%;
     height: 120px;
-
 }
-.nav .nav_left{
-     padding-top: 28px;
+
+.nav .nav_left {
+    padding-top: 28px;
     background: pink;
     float: left;
     width: 30%;
     height: 92px;
 }
-.nav .nav_left .scopeOne, .scopeTwo{
+
+.nav .nav_left .scopeOne,
+.scopeTwo {
     margin-left: 10px;
 }
-.nav .nav_left .scopeOne span{
-    color: #000;
 
+.nav .nav_left .scopeOne span {
+    color: #000;
 }
-.nav .nav_left .scopeOne select{
+
+.nav .nav_left .scopeOne select {
     color: #232323;
     height: 28px;
 }
-.nav .nav_left .scopeOne span, select{
+
+.nav .nav_left .scopeOne span,
+select {
     font-size: 16px;
     width: 40%;
-
 }
-.nav .nav_left .scopeTwo{
+
+.nav .nav_left .scopeTwo {
     margin-top: 20px;
 }
-.nav .nav_left .scopeTwo input{
+
+.nav .nav_left .scopeTwo input {
     font-size: 16px;
     width: 40%;
     border-radius: 6px;
     height: 26px;
 }
 
-.nav .nav_left .scopeTwo .scopeThree{
+.nav .nav_left .scopeTwo .scopeThree {
     position: relative;
-
 }
-.nav .nav_left .scopeTwo .scopeThree span{
+
+.nav .nav_left .scopeTwo .scopeThree span {
     margin-left: 60px;
 }
-.nav .nav_left .scopeTwo .scopeThree .scope_search{
+
+.nav .nav_left .scopeTwo .scopeThree .scope_search {
     position: absolute;
     background: url("../img/imgone.png") no-repeat -707px -289px;
     width: 50px;
@@ -96,13 +111,12 @@ select::-ms-expand { display: none; }
     top: -7px;
 }
 
-.nav .nav_left .scopeTwo .scopeThree:hover span{
-   color: #befd78;
+.nav .nav_left .scopeTwo .scopeThree:hover span {
+    color: #befd78;
     margin-left: 60px;
-
 }
 
-.nav .nav_left .scopeTwo .scopeThree:hover .scope_search{
+.nav .nav_left .scopeTwo .scopeThree:hover .scope_search {
     position: absolute;
     background: url("../img/imgone.png") no-repeat -707px -236px;
     width: 50px;
@@ -111,169 +125,415 @@ select::-ms-expand { display: none; }
     top: -7px;
 }
 
-
-.nav .nav_right{
+.nav .nav_right {
     padding-top: 16px;
     background: red;
     float: right;
     width: 70%;
     height: 104px;
 }
-.nav .nav_right h1{
-    margin-left:20%;
-    font: normal bold 36px Microsoft YaHei,sans-serif;
+
+.nav .nav_right h1 {
+    margin-left: 20%;
+    font: normal bold 36px Microsoft YaHei, sans-serif;
     line-height: 38px;
 }
 
-
-
-.footer{
+.footer {
     height: 648px;
     background: green;
     border: 1px solid #000;
     margin: 10px;
 }
 
-.footer .footer_left{
+.footer .footer_left {
     width: 30%;
     height: 100%;
     background: pink;
-   float: left;
-    padding:10px;
-   box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
 }
-.footer .footer_left .content_up{
+
+.footer .footer_left .content_up {
     width: 100%;
     height: 33%;
     background: #802217;
 }
-.footer .footer_left .content_up h2{
+
+.footer .footer_left .content_up h2 {
     text-align: center;
-    font: normal bold 24px Microsoft YaHei,sans-serif;
+    font: normal bold 24px Microsoft YaHei, sans-serif;
+    margin-bottom: 10px;
 }
-.footer .footer_left .content_up .content_case{
+
+.footer .footer_left .content_up .content_case {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 85%;
+    height: 80%;
     width: 100%;
 }
- .content_case::-webkit-scrollbar {/*滚动条整体样式*/
-    width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+
+.content_case::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 7px;
+    /*高宽分别对应横竖滚动条的尺寸*/
     height: 7px;
 }
-.content_case::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+
+.content_case::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
     border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
-.content_case::-webkit-scrollbar-track {/*滚动条里面轨道*/
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+
+.content_case::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
+.footer .footer_left .content_center {
 
-.footer .footer_left .content_center{
-    margin-top: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
     width: 100%;
-    height: 33%;
+    height: 34%;
     background: green;
 }
+.footer .footer_left .content_center {
 
-.footer .footer_left .content_center .survey{
+   border-top: 1px solid #000000;
+   
+   
+  }
+
+.footer .footer_left .content_center .survey {
     position: relative;
 }
-.footer .footer_left .content_center .survey h2{
+
+.footer .footer_left .content_center .survey h2 {
     /*display: inline;*/
     text-align: center;
 }
-.footer .footer_left .content_center .survey span{
+
+.footer .footer_left .content_center .survey span {
     position: absolute;
     right: 0;
     bottom: 3px;
-    font: normal bold 16px Microsoft YaHei,sans-serif;
-
+    font: normal bold 16px Microsoft YaHei, sans-serif;
 }
-.footer .footer_left .content_center .survey:hover span{
+
+.footer .footer_left .content_center .survey:hover span {
     color: #befd78;
 }
-.footer .footer_left .content_center .survey i{
+
+.footer .footer_left .content_center .survey i {
     position: absolute;
-    background: url("../img/imgone.png") no-repeat -649px -289px;
-    width: 31px;
-    height: 34px;
+    background: url("../img/4.png") no-repeat -986px -426px;
+    width: 29px;
+    height: 27px;
     right: 35px;
     bottom: -2px;
 }
 
-.footer .footer_left .content_center .survey:hover i{
+.footer .footer_left .content_center .survey:hover i {
     position: absolute;
-    background: url("../img/imgone.png") no-repeat -649px -236px;
-    width: 31px;
-    height: 34px;
+    background: url("../img/4.png") no-repeat -986px -388px;
+    width: 29px;
+    height: 27px;
     right: 35px;
     bottom: -2px;
 }
-.footer .footer_left .content_center .surveyTwo{
+
+.footer .footer_left .content_center .surveyTwo {
     overflow-x: hidden;
     overflow-y: auto;
     height: 85%;
     width: 100%;
 }
 
-.surveyTwo::-webkit-scrollbar {/*滚动条整体样式*/
-    width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+.surveyTwo::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 7px;
+    /*高宽分别对应横竖滚动条的尺寸*/
     height: 7px;
 }
-.surveyTwo::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+
+.surveyTwo::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
     border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.2);
-}
-.surveyTwo::-webkit-scrollbar-track {/*滚动条里面轨道*/
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    border-radius: 0;
-    background: rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.footer .footer_left .content_center .surveyTwo p{
+.surveyTwo::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer_left .content_center .surveyTwo p {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    font: normal bold 16px Microsoft YaHei,sans-serif;
+    font: normal bold 16px Microsoft YaHei, sans-serif;
     color: #202020;
-
     /*line-height: 16px;*/
     margin-top: 5px;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
-
-
-
-
-
-
-
-.footer .footer_left .content_down{
-    margin-top: 10px;
+.footer .footer_left .content_down {
+ 
+    padding-top: 10px;
     width: 100%;
     height: 33%;
     background: #4a7780;
 }
 
+.footer .footer_left .content_down .position {
+    position: relative;
+}
 
+.footer .footer_left .content_down .position h2 {
+    display: inline;
+    font: normal bold 24px Microsoft YaHei, sans-serif;
+}
 
+.footer .footer_left .content_down .position span {
+    float: right;
+    margin-right: 18px;
+    font: normal bold 16px Microsoft YaHei, sans-serif;
+}
 
+.footer .footer_left .content_down .position span:first-of-type {
+    margin-right: 50px
+}
 
+.footer .footer_left .content_down .position span:last-of-type {
+    color: #fcf98a;
+}
 
+.footer .footer_left .content_down .position>i {
+    position: absolute;
+    background: url("../img/imgone.png") no-repeat -649px -289px;
+    width: 31px;
+    height: 34px;
+    right: 10px;
+    bottom: -1px;
+}
 
+.footer .footer_left .content_down .position:hover>i {
+    position: absolute;
+    background: url("../img/imgone.png") no-repeat -649px -236px;
+    width: 31px;
+    height: 34px;
+    right: 10px;
+    bottom: -1px;
+}
 
+.footer .footer_left .content_down .position_content p {
+    font: normal 14px Microsoft YaHei, sans-serif;
+    color: #202020;
+    line-height: 20px
+}
 
-
-.footer .footer_right{
+.footer .footer_right {
     float: right;
     width: 70%;
     height: 100%;
     background: #979;
+}
+
+.footer .footer_right .note_up {
+    width: 100%;
+    height: 67%;
+    background: red
+}
+
+.footer .footer_right .note_up .note_left {
+    width: 74%;
+    height: 100%;
+    background: rgb(192, 255, 197);
+    padding: 10px;
+    box-sizing: border-box;
+    float: left
+}
+
+.footer .footer_right .note_up .note_left .note_content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 74%;
+}
+
+.note_content::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 7px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 7px;
+}
+
+.note_content::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.note_content::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer_right .note_up .note_left h2 {
+    font: normal bold 24px Microsoft YaHei, sans-serif;
+    text-align-last: center;
+    height: 10%;
+}
+
+.footer .footer_right .note_up .note_left .note_content {
+    width: 100%;
+    height: 90%;
+    background: greenyellow
+}
+
+.footer .footer_right .note_up .note_right {
+    float: right;
+    width: 26%;
+    height: 100%;
+    background: #befd78;
+    border-left: 1px solid #e3f8e3;
+    box-sizing: border-box
+}
+.footer .footer_right .note_up .note_right h2{
+    margin: 10px 0;
+    text-align: center;
+    font: normal bold 24px Microsoft YaHei,sans-serif;
+}
+.footer .footer_right .note_up .note_right div p{
+    font: normal 14px Miscosoft YaHei,sans-serif;
+    color: #202020;
+    line-height: 22px;
+}
+
+.footer .footer_right .note_down{
+    background: red;
+    width: 100%;
+    height: 33%;
+}
+.footer .footer_right .note_down>h2{
+    text-align: center ;
+    font :normal bold 24px Miscosoft YaHei,sans-serif;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.footer .footer_right .note_down .preview{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 75%;
+    width: 100%;
+}
+
+
+.preview::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 7px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 7px;
+}
+
+.preview::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.preview::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    left: 0;
+    top:0;
+    display: none;
+}
+.mask .detail_content
+{
+    width: 280px;
+    height: 250px;
+    margin: 200px auto;
+    background: #fff;
+}
+
+.mask .detail_header
+{
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.mask .detail_header .close{
+    float: right;
+}
+.mask .detail_body
+{
+    width: 260px;
+    height: 150px;
+    /*background: red;*/
+    margin: 2px auto;
+    /*border:1px solid red;*/
+}
+.mask .detail_body textarea{
+    width: 260px;
+    height: 100px;
+    background: #CCCCCC;
+}
+
+.mask .detail_body input[type = text]
+{
+    width: 260px;
+    height: 30px;
+    background: #CCCCCC;
+}
+
+.mask .detail_body button
+{
+    width: 100px;
+    height: 30px;
+    background: red;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 10px;
 }

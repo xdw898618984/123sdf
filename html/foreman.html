@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,82 +9,336 @@
     <link rel="stylesheet" href="../style/foreman.css">
     <title>值班长编辑页面</title>
 </head>
+
 <body>
-<section class="nav">
-    <div class="nav_left">
-         <div class="scopeOne">
-             <span> 范围:</span>
-             <select name="" id="">
-                 <option value="1">最近一个月</option>
-                 <option value="2">最近半年</option>
-                 <option value="3">最近一年</option>
-             </select>
-         </div>
-         <div class=" scopeTwo">
-             <span>内容:</span>
-             <span class="scopeThree"><input type="text">
+    <section class="nav">
+        <div class="nav_left">
+            <div class="scopeOne">
+                <span> 范围:</span>
+                <select name="" id="">
+                    <option value="1">最近一个月</option>
+                    <option value="2">最近半年</option>
+                    <option value="3">最近一年</option>
+                </select>
+            </div>
+            <div class=" scopeTwo">
+                <span>内容:</span>
+                <span class="scopeThree">
+                    <input type="text">
 
-                 <div style="display: inline-block">
-                  <i class="scope_search"></i><span>搜索</span>
-</div>
-             </span>
-         </div>
-    </div>
-
-
-  <div class="nav_right">
-       <h1>值班长短信编辑工具</h1>
-
-  </div>
-
-</section>
-<section class="footer">
-    <div class="footer_left">
-      <div class="content_up">
-           <h2>案例内容</h2>
-           <div class="content_case">
-               “填故障原因内容” “。” “拨测情况：
-               （固定）” “（选正常填“填拨测正常”、选失败“
-               填拨测失败”、选其它“填具体内容”，选择“无”
-               则该部分不写）” “。” “处理情况：（固定）”
-               “填处理情况内容”“。”“投诉情况：省监控与客服确认，
-               截至（固定）”“XX：XX（按当前时间获取），”“共收到投诉XX宗
-               ，（文字固定，XX按照投诉量填）” “（部分为滞后投诉）。（默认选
-               否”，勾选是则加这句话）” “省监控指挥调度人：（固定）”“XX
-               （1380288XXXX），填实际值班人员”“省专业信息联络人：XX（138XXXX）
-               （填勾选专业）”“特此汇报。温馨提示：内部信息，未经许可切勿私自传
-               播。（固定）”“发布范围（填勾选发布范围）”
-
-           </div>
-
-      </div>
-      <div class="content_center">
-          <div class="survey">
-
-              <span>详细</span>
-              <i class="minute"></i>
-              <h2>模板案例概览</h2>
-          </div>
-          <div class="surveyTwo">
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-              <p >特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <div style="display: inline-block">
+                        <i class="scope_search"></i>
+                        <span>搜索</span>
+                    </div>
+                </span>
+            </div>
+        </div>
 
 
-          </div>
+        <div class="nav_right">
+            <h1>值班长短信编辑工具</h1>
+
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="footer_left">
+            <div class="content_up">
+                <h2>案例内容</h2>
+                <div class="content_case">
+                    “填故障原因内容” “。” “拨测情况： （固定）” “（选正常填“填拨测正常”、选失败“ 填拨测失败”、选其它“填具体内容”，选择“无” 则该部分不写）” “。” “处理情况：（固定）” “填处理情况内容”“。”“投诉情况：省监控与客服确认，
+                    截至（固定）”“XX：XX（按当前时间获取），”“共收到投诉XX宗 ，（文字固定，XX按照投诉量填）” “（部分为滞后投诉）。（默认选 否”，勾选是则加这句话）” “省监控指挥调度人：（固定）”“XX
+                    （1380288XXXX），填实际值班人员”“省专业信息联络人：XX（138XXXX） （填勾选专业）”“特此汇报。温馨提示：内部信息，未经许可切勿私自传 播。（固定）”“发布范围（填勾选发布范围）”
+
+                </div>
+
+            </div>
+            <div class="content_center">
+                <div class="survey">
+
+                    <span class="detail">详细</span>
+                    <i class="minute"></i>
+                    <h2>模板案例概览</h2>
+                </div>
+                <div class="surveyTwo">
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
+                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
 
 
-      </div>
-      <div class="content_down"></div>
-    </div>
-    <div class="footer_right"></div>
+                </div>
 
 
-</section>
+            </div>
+            <div class="content_down">
+                <div class="position">
+
+                    <h2>岗位</h2>
+                    <span>大核心</span>
+                    <span>大无线</span>
+                    <i></i>
+
+                </div>
+
+                <div class="position_content">
+                    <p>
+                        岗位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗位
+                        岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位
+
+                    </p>
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="footer_right">
+            <div class="note_up">
+
+                <div class="note_left">
+                    <h2>新增短信(值班长)</h2>
+
+                    <div class="note_content">
+                        <div>
+                            <span>故障级别:</span>
+                            <input type="checkbox">
+                            <span>快讯</span>
+                            <input type="checkbox" checked="checked">
+                            <span>内部通报</span>
+                            <input type="checkbox">
+                            <span>严重故障</span>
+                        </div>
+                        <div>
+                            <span>影响业务:</span>
+                            <input type="checkbox" checked="checked">
+                            <span>影响</span>
+                            <input type="checkbox">
+                            <span>不影响</span>
+
+                        </div>
+                        <div>
+                            <span>故障标题:</span>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <span>发生时间:</span>
+                            <span>2018/01/05(系统自动生成)</span>
+                        </div>
+                        <div>
+                            <span>故障现象:</span>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div>
+                            <span>故障原因:</span>
+                            <input type="checkbox" checked="checked">
+                            <span>待确定</span>
+                            <input type="checkbox">
+                            <span>其他</span>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <span>拨测情况:</span>
+                            <input type="checkbox" checked="checked">
+                            <span>无</span>
+                            <input type="checkbox">
+                            <span>正常</span>
+                            <input type="checkbox">
+                            <span>失败</span>
+                            <input type="checkbox">
+                            <span>其他</span>
+                            <input type="text">
+                        </div>
+                        <div>
+
+                            <span>影响范围:</span>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <span>处理情况:</span>
+                            <input type="text">
+
+                        </div>
+                        <div>
+
+                            <span>投诉情况</span>
+                            <input type="text">
+                            <span>投诉量</span>
+                            <input type="text">
+                            <span>滞后投诉:</span>
+                            <input type="checkbox" checked="checked">
+                            <span>是</span>
+                            <input type="checkbox">
+                            <span>否</span>
+                        </div>
+
+                        <div>
+                            <span>
+                                省监控指挥调度人:
+                            </span>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <span>专业室:</span>
+                            <input type="checkbox" checked="checked">
+                            <span>核维室</span>
+                            <input type="checkbox" checked="checked">
+                            <span>互联网室</span>
+                            <input type="checkbox">
+                            <span>安增室</span>
+                            <input type="checkbox">
+                            <span>性能室</span>
+                            <input type="checkbox">
+                            <span>资配室</span>
+                            <input type="checkbox">
+                            <span>网管室</span>
+                            <input type="checkbox">
+                            <span>传动室</span>
+                            <input type="checkbox">
+                            <span>无忧</span>
+                            <input type="checkbox">
+                            <span>省信息系统部</span>
+                            <input type="checkbox">
+                            <span>客响</span>
+                        </div>
+
+                        <div>
+
+                            <span>地市:</span>
+                            <select name="" id="">
+
+                                <option value="1">广州</option>
+
+                                <option value="2">中山</option>
+                                <option value="3">深圳</option>
+                            </select>
+
+                            <span>广州联系人:</span>
+                            <input type="text">
+
+                        </div>
+
+                        <div>
+                            <span>发布范围:</span>
+                            <input type="checkbox">
+                            <span>普通快讯</span>
+                            <input type="checkbox">
+                            <span>家宽快讯</span>
+                            <input type="checkbox">
+                            <span>集客快讯</span>
+                            <input type="checkbox" checked="checked">
+                            <span>集客内部通报</span>
+                            <input type="checkbox">
+                            <span>严重故障</span>
+                            <input type="checkbox">
+                            <span>VIP背部通报</span>
+                            <input type="checkbox">
+                            <span>突发事件</span>
+
+                        </div>
+
+                        <div>
+                            <i></i>
+                            <h3>确定</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="note_right">
+                    <h2>故障现象模板</h2>
+                    <div>
+
+                        <p>
+                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
+                        </p>
+
+                        <p>
+                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
+                        </p>
+                        <p>
+                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
+                        </p>
+                        <p>
+                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
+                        </p>
+                        <p>
+                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+            <div class="note_down">
+                <h2>短信预览</h2>
+
+                <div class="preview">
+
+
+                    “【阶段|（固定）” “影响业务（按照影响业务/不影响业务 按钮选择变化）|” “内部通报（按照内部通报/严重故障按钮 选择变化）|” “填故障标题内容】” “发生原因：（固定）” “ 填故障原因内容” “。” “拨测情况：（固定）” “（选正常填“填
+                    拨测正常”、选失败“填拨测失败”、选其它“填具体内容”，选择“无 ”则该部分不写）” “。” “处理情况：（固定）”“填处理情况内容” “。”“投诉情况：省监控与客服确认，截至（固定）”“XX：XX（按当
+                    前时间获取），”“共收到投诉XX宗，（文字固定，XX按照投诉量填） ” “（部分为滞后投诉）。（默认选“否”，勾选是则加这句话）” “省 监控指挥调度人：（固定）”“XX（1380288XXXX），填实际值班人员”
+                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）”
+
+                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）”
+                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）”
+
+                    <h3>审核保存
+                        <i class="check"></i>
+                    </h3>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+    <section>
+    <div class="mask">
+            <div class="detail_content">
+                <div class="detail_header">
+                    <span class="title">我是标题</span>
+                    <span class="close">关闭</span>
+                </div>
+                <div class="detail_body">
+                    <textarea class="oText"></textarea>
+                    <input type="text" id="dateTime">
+                    <button class="update">更新</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="../jquery/jquery-3.2.1.min.js"></script>
+<script src="../js/foreman.js"></script>
+
 </html>
