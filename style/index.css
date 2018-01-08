@@ -1,7 +1,7 @@
 
 body {
-    width: 1366px;
-    height: 768px;
+    width: 100%;
+    height: 100%;
     background-image: url(../img/bg.png);
     scrollbar-arrow-color:#f2f2f3;  /*上下箭头*/
     scrollbar-track-color:#1589ce;  /*底层背景色*/
@@ -137,7 +137,7 @@ body {
 .matter {
     margin-top: 85px;
     height: 424px;
-    width: 1310px;
+    width: ;
     margin-left: 10px;
     line-height: 34px;
     overflow: auto;
@@ -249,7 +249,7 @@ body {
     display: block;
     position: absolute;
     top: 0px;
-    left: 127px;
+    left: 170px;
     width: 37px;
     height: 10px;
     line-height: 15px;

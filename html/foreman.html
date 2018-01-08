@@ -107,116 +107,136 @@
                     <h2>新增短信(值班长)</h2>
 
                     <div class="note_content">
-                        <div>
+                        <div class="rank">
                             <span>故障级别:</span>
-                            <input type="checkbox">
-                            <span>快讯</span>
-                            <input type="checkbox" checked="checked">
-                            <span>内部通报</span>
-                            <input type="checkbox">
-                            <span>严重故障</span>
-                        </div>
-                        <div>
-                            <span>影响业务:</span>
-                            <input type="checkbox" checked="checked">
-                            <span>影响</span>
-                            <input type="checkbox">
-                            <span>不影响</span>
+                            <label>
+                                <input name="rank4" type="radio" value="快讯" />快讯</label>
+                            <label>
+                                <input name="rank4" type="radio" value="内部通报" checked="checked" />内部通报</label>
+                            <label>
+                                <input name="rank4" type="radio" value="严重故障" />严重故障</label>
 
                         </div>
-                        <div>
-                            <span>故障标题:</span>
-                            <input type="text">
+                        <div class="business">
+                            <span>影响业务:</span>
+                            <label>
+                                <input name="business1" type="radio" value="影响" checked="checked" />影响</label>
+                            <label>
+                                <input name="business1" type="radio" value="不影响" />不影响</label>
                         </div>
-                        <div>
+                        <div class="headline">
+                            <span>故障标题:</span>
+                            <input type="text" name="headline">
+                        </div>
+                        <div class=" time">
                             <span>发生时间:</span>
                             <span>2018/01/05(系统自动生成)</span>
                         </div>
-                        <div>
+                        <div class="appearance">
                             <span>故障现象:</span>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="" cols="30" rows="3"></textarea>
                         </div>
 
-                        <div>
+                        <div class="cause">
                             <span>故障原因:</span>
-                            <input type="checkbox" checked="checked">
-                            <span>待确定</span>
-                            <input type="checkbox">
-                            <span>其他</span>
-                            <input type="text">
+                            <label>
+                                <input name="cause1" type="radio" value="待确定" checked="checked" />待确定</label>
+                            <label>
+                                <input name="cause1" type="radio" value="其他" />其他</label>
+                            <input type="text" name="cause1">
                         </div>
-                        <div>
+                        <div class="status">
                             <span>拨测情况:</span>
-                            <input type="checkbox" checked="checked">
-                            <span>无</span>
-                            <input type="checkbox">
-                            <span>正常</span>
-                            <input type="checkbox">
-                            <span>失败</span>
-                            <input type="checkbox">
-                            <span>其他</span>
+
+                            <label>
+                                <input name="status1" type="radio" value="无" checked="checked" />无</label>
+                            <label>
+                                <input name="status1" type="radio" value="正常" />正常</label>
+                            <label>
+                                <input name="status1" type="radio" value="失败" />失败</label>
+                            <label>
+                                <input name="status1" type="radio" value="其他" />其他</label>
+
                             <input type="text">
                         </div>
-                        <div>
+                        <div class="scope">
 
                             <span>影响范围:</span>
-                            <input type="text">
+                            <input type="text" name="scope1">
                         </div>
-                        <div>
+                        <div class="conduct">
                             <span>处理情况:</span>
-                            <input type="text">
+                            <input type="text" name="conduct1">
 
                         </div>
-                        <div>
+                        <div class="complain">
 
-                            <span>投诉情况</span>
-                            <input type="text">
-                            <span>投诉量</span>
-                            <input type="text">
+                            <span>投诉情况:</span>
+
+
+                            <input type="text" name="complain2">
+                            <span>投诉量:</span>
+                            <input type="text" name="complain3">
                             <span>滞后投诉:</span>
-                            <input type="checkbox" checked="checked">
-                            <span>是</span>
-                            <input type="checkbox">
-                            <span>否</span>
+
+                            <label>
+                                <input name="complain1" type="radio" value="是" checked="checked" />是</label>
+                            <label>
+                                <input name="complain1" type="radio" value="否" />否</label>
+
                         </div>
 
-                        <div>
+                        <div class=" monitoring">
                             <span>
                                 省监控指挥调度人:
                             </span>
-                            <input type="text">
+                            <input type="text" name="monitoring1">
                         </div>
-                        <div>
+                        <div class="labs">
                             <span>专业室:</span>
-                            <input type="checkbox" checked="checked">
-                            <span>核维室</span>
-                            <input type="checkbox" checked="checked">
-                            <span>互联网室</span>
-                            <input type="checkbox">
-                            <span>安增室</span>
-                            <input type="checkbox">
-                            <span>性能室</span>
-                            <input type="checkbox">
-                            <span>资配室</span>
-                            <input type="checkbox">
-                            <span>网管室</span>
-                            <input type="checkbox">
-                            <span>传动室</span>
-                            <input type="checkbox">
-                            <span>无忧</span>
-                            <input type="checkbox">
-                            <span>省信息系统部</span>
-                            <input type="checkbox">
-                            <span>客响</span>
+                            <div class="labses">
+                
+
+                                <label>
+                                    <input name="labs1" type="checkbox" value="核维室" checked="checked" />核维室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="互联网室" checked="checked" />互联网室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="安增室" />安增室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="性能室" />性能室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="资配室" />资配室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="网管室" />网管室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="传动室" />传动室</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="无忧" />无忧</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="省信息系统部" />省信息系统部</label>
+                                <label>
+                                    <input name="labs1" type="checkbox" value="客响" />客响</label>
+
+                                <div>
+                                    <span>
+                                        <span>省核维室信息联络人:</span>
+                                        <input type="text">
+                                    </span>
+                                    <span>
+                                        <span>省互联网室信息联络人:</span>
+                                        <input type="text">
+                                    </span>
+                                </div>
+                            </div>
                         </div>
 
-                        <div>
+                        <div class="city">
 
                             <span>地市:</span>
                             <select name="" id="">
 
                                 <option value="1">广州</option>
-
                                 <option value="2">中山</option>
                                 <option value="3">深圳</option>
                             </select>
@@ -226,28 +246,49 @@
 
                         </div>
 
-                        <div>
+                        <div class="publish">
                             <span>发布范围:</span>
-                            <input type="checkbox">
-                            <span>普通快讯</span>
-                            <input type="checkbox">
-                            <span>家宽快讯</span>
-                            <input type="checkbox">
-                            <span>集客快讯</span>
-                            <input type="checkbox" checked="checked">
-                            <span>集客内部通报</span>
-                            <input type="checkbox">
-                            <span>严重故障</span>
-                            <input type="checkbox">
-                            <span>VIP背部通报</span>
-                            <input type="checkbox">
-                            <span>突发事件</span>
+                            <div>
+                                <div>
 
+                                    <input type="checkbox">
+                                    <span>普通快讯</span>
+
+
+
+                                    <input type="checkbox">
+                                    <span>家宽快讯</span>
+
+                                    <input type="checkbox">
+                                    <span>集客快讯</span>
+
+                                    <input type="checkbox" checked="checked">
+                                    <span>内部通报</span>
+
+                                </div>
+                                <div>
+
+                                    <input type="checkbox">
+                                    <span>集客内部通报</span>
+
+                                    <input type="checkbox">
+                                    <span>严重故障</span>
+
+                                    <input type="checkbox">
+                                    <span>VIP背部通报</span>
+
+                                    <input type="checkbox">
+                                    <span>突发事件</span>
+
+                                </div>
+                            </div>
                         </div>
 
-                        <div>
-                            <i></i>
-                            <h3>确定</h3>
+                        <div class="sure">
+
+                            <h3 class="produce">确定
+                                <i class="reconfirm"></i>
+                            </h3>
 
                         </div>
 
@@ -289,14 +330,12 @@
 
                 <div class="preview">
 
-
                     “【阶段|（固定）” “影响业务（按照影响业务/不影响业务 按钮选择变化）|” “内部通报（按照内部通报/严重故障按钮 选择变化）|” “填故障标题内容】” “发生原因：（固定）” “ 填故障原因内容” “。” “拨测情况：（固定）” “（选正常填“填
                     拨测正常”、选失败“填拨测失败”、选其它“填具体内容”，选择“无 ”则该部分不写）” “。” “处理情况：（固定）”“填处理情况内容” “。”“投诉情况：省监控与客服确认，截至（固定）”“XX：XX（按当
                     前时间获取），”“共收到投诉XX宗，（文字固定，XX按照投诉量填） ” “（部分为滞后投诉）。（默认选“否”，勾选是则加这句话）” “省 监控指挥调度人：（固定）”“XX（1380288XXXX），填实际值班人员”
-                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）”
-
-                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）”
-                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）”
+                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）” “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨
+                    提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）” “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发
+                    布范围（填勾选发布范围）”
 
                     <h3>审核保存
                         <i class="check"></i>
@@ -322,17 +361,21 @@
 
     </section>
 
+
+
+
+
     <section>
-    <div class="mask">
+        <div class="mask">
             <div class="detail_content">
-                <div class="detail_header">
-                    <span class="title">我是标题</span>
-                    <span class="close">关闭</span>
+                <div class="detail_up">
+                    <textarea name="" id="" cols="30" rows=""></textarea>
+                    <textarea name="" id="" cols="30" rows=""></textarea>
+                    <textarea name="" id="" cols="30" rows=""></textarea>
                 </div>
                 <div class="detail_body">
-                    <textarea class="oText"></textarea>
-                    <input type="text" id="dateTime">
-                    <button class="update">更新</button>
+                    <button class="ensure">确定</button>
+                    <button class="close">取消</button>
                 </div>
             </div>
         </div>

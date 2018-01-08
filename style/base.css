@@ -3,15 +3,20 @@
     padding: 0;
 }
 body {
-    width: 100%;
-    height: 768px;
+   
     overflow: hidden;
     background-image: url(../img/bg.png);
+
+    background-size: 100% 100%;
     /*scrollbar-arrow-color:#f2f2f3;  !*上下箭头*!*/
     /*scrollbar-track-color:#1589ce;  !*底层背景色*!*/
     /*scrollbar-face-color:#27aeff;   !*滚动条前景色*!*/
     /*scrollbar-Shadow-color:#1589ce; !*滚动条边线色*!*/
     /*overflow-y:scroll; overflow-x:hidden;table-layout: fixed;word-wrap:break-word;word-break:break-all;*/
+}
+
+html{
+    height: 100%;
 }
 li{
     list-style: none;
@@ -24,4 +29,7 @@ a{
 input{
     width: 12px;
     height: 12px;
+}
+select{
+    background-color: rgb(162,233,255);
 }

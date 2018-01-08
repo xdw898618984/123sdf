@@ -19,7 +19,7 @@ function initialize() {
  
     $("#add").click(function () {
         var dateNow=show();
-        var setmp = '<li style="position: relative">' +
+        var setmp = '<li  class="setmp"  style="position: relative">' +
             '<input type="checkbox" style="float: left;position: absolute; top: 22px; left:34px;">'+
             '<div class="click"> '+
             '<span class="num1">'+show()+'</span>' +
