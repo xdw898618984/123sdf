@@ -415,7 +415,6 @@ select {
     margin-right: 30px;
 }
 
-
 .footer .footer_right .note_up .note_left .note_content .business label {
     margin-right: 30px;
 }
@@ -443,9 +442,11 @@ select {
 .footer .footer_right .note_up .note_left .note_content .cause label {
     margin-right: 30px;
 }
+
 .footer .footer_right .note_up .note_left .note_content .cause label:last-of-type {
     margin-right: 0;
 }
+
 .footer .footer_right .note_up .note_left .note_content .cause>input {
     width: 57%;
     height: 18px;
@@ -454,11 +455,10 @@ select {
 .footer .footer_right .note_up .note_left .note_content .status label {
     margin-right: 30px;
 }
-.footer .footer_right .note_up .note_left .note_content .status label:last-of-type{
+
+.footer .footer_right .note_up .note_left .note_content .status label:last-of-type {
     margin-right: 0px;
 }
-
-
 
 .footer .footer_right .note_up .note_left .note_content .status>input:last-of-type {
     width: 37%;
@@ -622,6 +622,46 @@ select {
     background: rgba(0, 0, 0, 0.1);
 }
 
+.footer .footer_right .note_down .save {
+    position: relative;
+    width: 100%;
+    text-align-last: center;
+    margin-top:20px;
+}
+
+.footer .footer_right .note_down .save .check {
+    position: absolute;
+    background: url("../img/imgone.png") no-repeat -978px -285px;
+    width: 44px;
+    height: 44px;
+    bottom: -9px;
+    left: 40%;
+    
+}
+.footer .footer_right .note_down .save:hover .check{
+    position: absolute;
+    background: url("../img/imgone.png") no-repeat -978px -235px;
+    width: 44px;
+    height: 44px;
+    bottom: -9px;
+    left: 40%;
+
+
+}
+
+
+.footer .footer_right .note_down .save:hover .save_again {
+   color: #befd78;
+
+
+}
+
+
+
+
+
+
+
 .mask {
     width: 100%;
     height: 100%;
@@ -629,14 +669,13 @@ select {
     left: 0;
     top: 0;
     display: none;
-  
 }
 
 .mask .detail_content {
     width: 90%;
     height: 80%;
-    margin: 66px 43px ;
-    background:rgba(88, 94, 97,0.9) ;
+    margin: 66px 43px;
+    background: rgba(88, 94, 97, 0.9);
     border-radius: 5px;
 }
 
@@ -655,8 +694,8 @@ select {
     overflow-y: auto;
     height: 100%;
     width: 100%;
-
 }
+
 .mask .detail_up textarea::-webkit-scrollbar {
     /*滚动条整体样式*/
     width: 7px;
@@ -677,6 +716,7 @@ select {
     border-radius: 0;
     background: rgba(0, 0, 0, 0.1);
 }
+
 .mask .detail_up textarea:last-of-type {
     margin-right: 0;
 }
@@ -697,12 +737,13 @@ select {
     border: 1px solid;
     margin-bottom: 34px;
     /* box-shadow: -2px 0 5px #4cb8c4,0 -2px 5px #4cb8c4,0 2px 5px #4cb8c4,2px 0 5px #4cb8c4; */
-   
 }
-button{
+
+button {
     border-radius: 5px;
     background: transparent
 }
+
 
 /* .mask .detail_body:hover button {
 

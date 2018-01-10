@@ -233,6 +233,19 @@ body {
     top:11px;
     left: 50px;
 }
+
+.num6:hover .delete{
+
+    width: 24px;
+    height: 24px;
+    background: url("../img/14.png")no-repeat 0 -38px;
+    position: absolute;
+    top:11px;
+    left: 50px;
+}
+.num6:hover .deleteTo{
+    color: #befd78;
+}
 #down::before{
     content:'全选';
     display: block;

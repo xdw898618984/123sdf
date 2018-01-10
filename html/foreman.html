@@ -157,7 +157,7 @@
                             <label>
                                 <input name="status1" type="radio" value="其他" />其他</label>
 
-                            <input type="text">
+                            <input type="text" name="status1">
                         </div>
                         <div class="scope">
 
@@ -180,9 +180,9 @@
                             <span>滞后投诉:</span>
 
                             <label>
-                                <input name="complain1" type="radio" value="是" checked="checked" />是</label>
+                                <input name="complain1" type="radio" value="是" />是</label>
                             <label>
-                                <input name="complain1" type="radio" value="否" />否</label>
+                                <input name="complain1" type="radio" value="否" checked="checked" />否</label>
 
                         </div>
 
@@ -195,7 +195,7 @@
                         <div class="labs">
                             <span>专业室:</span>
                             <div class="labses">
-                
+
 
                                 <label>
                                     <input name="labs1" type="checkbox" value="核维室" checked="checked" />核维室</label>
@@ -212,20 +212,20 @@
                                 <label>
                                     <input name="labs1" type="checkbox" value="传动室" />传动室</label>
                                 <label>
-                                    <input name="labs1" type="checkbox" value="无忧" />无忧</label>
+                                    <input name="labs1" type="checkbox" value="无忧室" />无忧室</label>
                                 <label>
-                                    <input name="labs1" type="checkbox" value="省信息系统部" />省信息系统部</label>
+                                    <input name="labs1" type="checkbox" value="信息系统部" />信息系统部</label>
                                 <label>
-                                    <input name="labs1" type="checkbox" value="客响" />客响</label>
+                                    <input name="labs1" type="checkbox" value="客响室" />客响</label>
 
-                                <div>
-                                    <span>
-                                        <span>省核维室信息联络人:</span>
-                                        <input type="text">
+                                <div class="chamber">
+                                    <span class="del">
+                                        <span class="remove">省核维室信息联络人:</span>
+                                        <input type="text" name="object">
                                     </span>
-                                    <span>
-                                        <span>省互联网室信息联络人:</span>
-                                        <input type="text">
+                                    <span class="del">
+                                        <span class="remove">省互联网室信息联络人:</span>
+                                        <input type="text" name="object">
                                     </span>
                                 </div>
                             </div>
@@ -234,15 +234,14 @@
                         <div class="city">
 
                             <span>地市:</span>
-                            <select name="" id="">
-
+                            <select name="" id="city">
                                 <option value="1">广州</option>
                                 <option value="2">中山</option>
                                 <option value="3">深圳</option>
                             </select>
 
                             <span>广州联系人:</span>
-                            <input type="text">
+                            <input type="text" name="city1">
 
                         </div>
 
@@ -250,35 +249,31 @@
                             <span>发布范围:</span>
                             <div>
                                 <div>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="普通快讯" />普通快讯</label>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="家宽快讯" />家宽快讯</label>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="集客快讯" />集客快讯</label>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="内部通报" checked="checked" />内部通报</label>
 
-                                    <input type="checkbox">
-                                    <span>普通快讯</span>
-
-
-
-                                    <input type="checkbox">
-                                    <span>家宽快讯</span>
-
-                                    <input type="checkbox">
-                                    <span>集客快讯</span>
-
-                                    <input type="checkbox" checked="checked">
-                                    <span>内部通报</span>
 
                                 </div>
-                                <div>
+                                <div style="margin-top:10px">
 
-                                    <input type="checkbox">
-                                    <span>集客内部通报</span>
 
-                                    <input type="checkbox">
-                                    <span>严重故障</span>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="集客内部通报" />集客内部通报</label>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="严重故障" />严重故障</label>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="VIP内部通报" />VIP内部通报</label>
+                                    <label>
+                                        <input name="publish1" type="checkbox" value="突发事件" />突发事件</label>
 
-                                    <input type="checkbox">
-                                    <span>VIP背部通报</span>
 
-                                    <input type="checkbox">
-                                    <span>突发事件</span>
+
 
                                 </div>
                             </div>
@@ -329,15 +324,16 @@
                 <h2>短信预览</h2>
 
                 <div class="preview">
-
-                    “【阶段|（固定）” “影响业务（按照影响业务/不影响业务 按钮选择变化）|” “内部通报（按照内部通报/严重故障按钮 选择变化）|” “填故障标题内容】” “发生原因：（固定）” “ 填故障原因内容” “。” “拨测情况：（固定）” “（选正常填“填
-                    拨测正常”、选失败“填拨测失败”、选其它“填具体内容”，选择“无 ”则该部分不写）” “。” “处理情况：（固定）”“填处理情况内容” “。”“投诉情况：省监控与客服确认，截至（固定）”“XX：XX（按当
-                    前时间获取），”“共收到投诉XX宗，（文字固定，XX按照投诉量填） ” “（部分为滞后投诉）。（默认选“否”，勾选是则加这句话）” “省 监控指挥调度人：（固定）”“XX（1380288XXXX），填实际值班人员”
-                    “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）” “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨
-                    提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）” “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发
-                    布范围（填勾选发布范围）”
-
-                    <h3>审核保存
+                    <p class="preview_again">
+                        “【阶段|（固定）” “影响业务（按照影响业务/不影响业务 按钮选择变化）|” “内部通报（按照内部通报/严重故障按钮 选择变化）|” “填故障标题内容】” “发生原因：（固定）” “ 填故障原因内容” “。” “拨测情况：（固定）” “（选正常填“填
+                        拨测正常”、选失败“填拨测失败”、选其它“填具体内容”，选择“无 ”则该部分不写）” “。” “处理情况：（固定）”“填处理情况内容” “。”“投诉情况：省监控与客服确认，截至（固定）”“XX：XX（按当
+                        前时间获取），”“共收到投诉XX宗，（文字固定，XX按照投诉量填） ” “（部分为滞后投诉）。（默认选“否”，勾选是则加这句话）” “省 监控指挥调度人：（固定）”“XX（1380288XXXX），填实际值班人员”
+                        “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）” “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨
+                        提示：内部信息，未经许可切勿私自传播。（固定）”“发 布范围（填勾选发布范围）” “省专业信息联络人：XX（138XXXX）（填勾选专业）”“特此汇报。温馨 提示：内部信息，未经许可切勿私自传播。（固定）”“发
+                        布范围（填勾选发布范围）”
+                    </p>
+                    <h3 class="save">
+                        <p class="save_again">审核保存</p>
                         <i class="check"></i>
                     </h3>
 
