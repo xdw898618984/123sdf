@@ -11,63 +11,75 @@
 </head>
 
 <body>
-<sechtion class="nav">
-    <h1>
-        <b> 故障智能信息编辑工具</b>
-    </h1>
+    <sechtion class="nav">
+        <h1>
+            <b> 故障智能信息编辑工具</b>
+        </h1>
 
-</sechtion>
-<section class="header">
+    </sechtion>
+    <section class="header">
 
-    <div class="newAdd a">
-        <i class="header_left">
+        <div class="newAdd a">
+            <i class="header_left">
+            </i>
+            <p class="add a" id="add">新增记录</p>
+        </div>
+        <div class="left a">
 
-        </i>
-        <p class="add a" id="add">新增记录</p>
-    </div>
-    <div class="left a">
+            <p class="a">范围：</p>
+            <i class="header_date">
+            </i>
+            <select id="date">
+                <option value="first" selected>最近一个月</option>
+                <option value="two">最近半年</option>
+                <option value="three">最近一年</option>
 
-        <p class="a">范围：</p>
-        <i class="header_date">
-        </i>
-        <select id="date">
-            <option value="first" selected>最近一个月</option>
-            <option value="two">最近半年</option>
-            <option value="three">最近一年</option>
+            </select>
+        </div>
 
-        </select>
-    </div>
+        <div class="right a">
+            <p class="a">内容:</p>
+            <input id="content" type="text" placeholder="HHS">
+        </div>
+        <div class="header_right a">
+            <i class="header_search"></i>
+            <p class="search" id="search">搜索</p>
+        </div>
 
-    <div class="right a">
-        <p class="a">内容:</p>
-        <input id="content" type="text" placeholder="HHS">
-    </div>
-    <div class="header_right a">
-        <i class="header_search"></i>
-        <p class="search" id="search">搜索</p>
-    </div>
+    </section>
+    <section class="matter" >
+        <ul class="results-ul">
+            <li class="setmp" style="font-size: 20px;position: relative;">
+                <span style="float: left;position: absolute; top: 0px; left:25px;">
+                <label for="">
+                    <input class="up" type="checkbox" name="all" value="全选" > 全选
+                </label>
+               </span>
+                <!-- <p id="down" style="position: relative; float:left; display:inline;font-size: 14px;"></p> -->
+                <span class="num1">
+                    <b>故障时间</b>
+                </span>
+                <span class="num2">
+                    <b>故障等级</b>
+                </span>
+                <span class="num3">
+                    <b>故障标题</b>
+                </span>
+                <span class="num4">
+                    <b>值班长</b>
+                </span>
+                <span class="num5">
+                    <b>岗位</b>
+                </span>
+                <span class="num6" id="num6" style="position: relative; float: left;display: inline;font-size: 14px;">
+                    <b>操作</b>
+                    <p id="up">批量删除</p>
+                </span>
 
-</section>
-<section class="matter" style="background: transparent">
-    <ul class="results-ul">
-        <li style="font-size: 20px;position: relative;">
-            <input class="up" type="checkbox" style="float: left;position: absolute; top: 23px; left:34px;">
-            <p id="down"
-               style="position: relative; float: left;display: inline;font-size: 14px;"></p>
-            <span class="num1"><b>故障时间</b></span>
-            <span class="num2"><b>故障等级</b></span>
-            <span class="num3"><b>故障标题</b></span>
-            <span class="num4"><b>值班长</b></span>
-            <span class="num5"><b>岗位</b></span>
-            <span class="num6"><b>操作</b>
-                 <p id="up"
-                    style="position: relative; float: left;display: inline;font-size: 14px;"></p>
-            </span>
-
-        </li>
-        <hr style="border: 1px solid #37b3db">
-        <hr style="border: 1px  solid #e3f8ff">
-        <!-- <li style="position:relative; margin: 5px 0; height: 34px;">
+            </li>
+            <hr style="border: 1px solid #37b3db">
+            <hr style="border: 1px  solid #e3f8ff">
+            <!-- <li style="position:relative; margin: 5px 0; height: 34px;">
             <input type="checkbox" style="float: left;position: absolute; top: 23px; left:34px;">
             <div>
                 <span class="num1">2017/12/12 18:04</span>
@@ -93,13 +105,13 @@
          </li> -->
 
 
-    </ul>
+        </ul>
 
 
-</section>
+    </section>
 
-<script src="../jquery/jquery-3.2.1.min.js"></script>
-<script src="../js/index.js"></script>
+    <script src="../jquery/jquery-3.2.1.min.js"></script>
+    <script src="../js/index.js"></script>
 
 </body>
 

@@ -1,64 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>RunJS 演示代码</title>
-    <script>
-        var arr = [],inp;
-        onload = function(){
-            var cks = document.getElementsByName("ck");
-            for(var i = 0; i < cks.length; i++){
-                var cki = cks[i];
-                cki.onchange = function(){
-                    if(this.checked){
-                        if(!document.getElementById("inp")){
-                            inp = document.createElement("input");
-                            inp.type = "text";
-                            inp.id = "inp";
-                            ddv.appendChild(inp);
-                        }
-                    }else{
-                        var yes = false;
-                        for(var j=0;j<cks.length;j++){
-                            if(cks[j].checked){
-                                yes = true;
-                                break;
-                            }
-                        }
-                        if(!yes){
-                            ddv.removeChild(inp);
-                        }
-                    }
-                    inp = document.getElementById("inp");
-                    if(!!inp){
-                        arr = [];
-                        for(var j=0;j<cks.length;j++){
-                            if(cks[j].checked){
-                                arr.push(cks[j].value);
-                            }
-                        }
-                        inp.value=arr.join(",");
-                    }
-                }
-            }
-        }
-    </script>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ellipsis</title>
+</head>
 <body>
-  <label><input type="checkbox" name="ck" value="a" checked="checked"/>a</label> 
-    <label><input type="checkbox" name="ck" value="b" />b</label> 
-    <label><input type="checkbox" name="ck" value="c" />c</label> 
-    <label><input type="checkbox" name="ck" value="d" />d</label> 
-    <label><input type="checkbox" name="ck" value="e" />e</label> 
-    <div id="ddv">
-            <input type="text" id="inp">
-    </div>
-
-
-
-    
-  </body>
+<style>
+.demo {display: inline-block;*display: inline;*zoom: 1;width: 140px;height: 20px;line-height: 20px;font-size: 12px;overflow: hidden;-ms-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;}
+.demo:hover {height: auto;white-space: normal;}
+</style>
+<a href="#" target="_blank" class="demo">这是一段测试用的文本，没有实际意义，只是想达到显示效果。</a>
+</body>
 </html>
-
-
-

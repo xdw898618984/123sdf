@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/bootstrap-multiselect.css">
     <link rel="stylesheet" href="../style/post.css">
     <title>岗位上报信息工具</title>
 </head>
@@ -23,7 +25,7 @@
             <div class="content">
                 <div class="warning">
                     <span>告警情况: </span>
-                    <input type="text">
+                    <input type="text" name="number" id="warn">
                 </div>
                 <div class="pretreatment">
                     <span>预处理情况:</span>
@@ -36,19 +38,20 @@
                     </div>
                 </div>
 
-
-                <div class="reason">
-                    <span>故障原因:</span>
-                    <input type="text">
-                </div>
                 <div class="trouble">
                     <span>是否有故障时限:</span>
-                    <input type="checkbox" checked="checked">
-                    <span>有</span>
-                    &nbsp &nbsp
-                    <input type="checkbox">
-                    <span>无</span>
+                    <label for="">
+                        <input type="radio" value="有" name="timer" checked>有
+                    </label>
+                    <label for="">
+                        <input type="radio" value="无" name="timer">无
+                    </label>
                 </div>
+                <div class="reason">
+                    <span>故障原因:</span>
+                    <input type="text" name="reason">
+                </div>
+             
                 <div class="time">
                     <span>故障时限:</span>
 
@@ -59,88 +62,125 @@
 
                 <div class="complain">
                     <span>投诉情况:</span>
-                    <input type="text">
+                    <input type="text" name="complain">
                 </div>
                 <div class="dispose">
                     <span>处理情况:</span>
-                    <input type="text">
+                    <input type="text" name="dispose">
                 </div>
                 <div class="project">
                     <span>工程核查:</span>
-                    <input type="checkbox" checked="checked">
-                    <span>无</span>
-                    &nbsp; &nbsp;
-                    <input type="checkbox">
-                    <span>有</span>
-                    <input type="text">
+                    <label for="">
+
+                        <input type="radio" value="无" name="project" checked>无
+                    </label>
+                    <label for="">
+
+                        <input type="radio" value="有" name="project">有
+
+                    </label>
+
+                    <label for="">
+                        <input type="text" name="projectTwo">
+                    </label>
                 </div>
                 <div class="case">
                     <span>报障情况:</span>
-                    <div class="case_enter">
-                        <input type="checkbox" checked="checked">
-                        <span>核准室</span>
-                        <input type="checkbox" checked="checked">
-                        <span>互联网室</span>
-                        <input type="checkbox">
-                        <span>安增室</span>
-                        <input type="checkbox">
-                        <span>性能室</span>
-                        <input type="checkbox">
-                        <span>资配室</span>
-                        <input type="checkbox">
-                        <span>网管室</span>
-                        <input type="checkbox">
-                        <span>传动室</span>
-                        <input type="checkbox">
-                        <span>无忧</span>
-                        <input type="checkbox">
-                        <span>省信息系统部</span>
-                        <input type="checkbox">
-                        <span>客响</span>
-                        <input type="checkbox">
-                        <span>传动室</span>
-                        <input type="checkbox">
-                        <span>无线室</span>
-                        <input type="checkbox">
-                        <span>数据室</span>
-                        <input type="checkbox">
-                        <span>综维</span>
-                        <div class="case_down">
-                            <span>省核维室信息联络人:</span>
-                            <input type="text">
-                            <span>省互联网室信息联络人:</span>
-                            <input type="text">
-                        </div>
-                    </div>
 
+                    <div class="caseOne">
+                        <div class="case_enter">
+
+                            <label for="">
+                                <input type="checkbox" name="case" value="核维室" checked="checked">核维室</label>
+
+
+                            <label for="">
+                                <input type="checkbox" name="case" value="互联室" checked="checked">互联室</label>
+
+
+                            <label for="">
+                                <input type="checkbox" name="case" value="安增室">安增室
+                            </label>
+                            <label for="">
+                                <input type="checkbox" name="case" value="性能室">性能室
+                            </label>
+                            <label for="">
+                                <input type="checkbox" name="case" value="资配室">资配室
+                            </label>
+                            <label for="">
+                                <input type="checkbox" name="case" value="网管室">网管室
+                            </label>
+                            <label for="">
+                                <input type="checkbox" name="case" value="传动室">传动室
+                            </label>
+                            <label for="">
+                                <input type="checkbox" name="case" value="无忧室">无忧室
+                            </label>
+                            <label for="">
+                                <input type="checkbox" name="case" value="信息部">信息部
+                            </label>
+
+                        </div>
+                        <div class="case_down">
+                                <div class="del">
+                                    <span class="postOne">省核维室信息联络人:</span>
+                                    <input type="text" name="post" style="width:130px;height:24px">
+                                </div><div class="del">
+                                    <span class="postOne">省互联室信息联络人:</span>
+                                    <input type="text" name="post" style="width:130px;height:24px">
+                                </div>
+                            </div>
+                    </div>
+                 
                 </div>
                 <div class="city">
-                    <span>地市:</span>
-                    <select name="" id="">
-                        <option value="">广州</option>
-                        <option value="">中山</option>
-                        <option value="">深圳</option>
-                        <option value="">佛山</option>
-                    </select>
-
-                    <span>广州联系人</span>
-                    <input type="text">
-
+                    <div>
+                        <span>地市:</span>
+                        <select id="example-multiple-selected" multiple="multiple">
+                            <option value="广州" selected="selected">广州</option>
+                            <option value="佛山">佛山</option>
+                            <option value="深圳">深圳</option>
+                            <option value="汕头">汕头</option>
+                            <option value="珠海">珠海</option>
+                            <option value="韶关">韶关</option>
+                            <option value="湛江">湛江</option>
+                            <option value="肇庆">肇庆</option>
+                            <option value="江门">江门</option>
+                            <option value="茂名">茂名</option>
+                            <option value="惠州">惠州</option>
+                            <option value="梅州">梅州</option>
+                            <option value="汕尾">汕尾</option>
+                            <option value="河源">河源</option>
+                            <option value="阳江">阳江</option>
+                            <option value="清远">清远</option>
+                            <option value="东莞">东莞</option>
+                            <option value="中山">中山</option>
+                            <option value="潮州">潮州</option>
+                            <option value="揭阳">揭阳</option>
+                        </select>
+                    </div>
+                    <div class="linkman">
+                        <span>
+                            <span class="contacts">广州联系人</span>
+                            <input class="contactsOne" type="text" style="width:100px;height:24px">
+                        </span>
+                    </div>
+                    <div style="clear:both"></div>
                 </div>
 
                 <div class="testing">
                     <span>拨测结果:</span>
                     <div class="testing_enter">
-                        <div>
-                            <input type="checkbox" checked="checked">
-                            <span>正常</span>
-                            <input type="text" placeholder="拨测情况说明">
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <span>失败</span>
-                            <input type="text" placeholder="拨测情况说明">
-                        </div>
+                    
+                            <label for="">
+                                <input type="radio" value="正常" name="result">正常
+                            </label>
+                            <input type="text" name="nameOne" placeholder="拨测情况说明">
+                        <br>
+                            <label for="">
+                                <input type="radio" value="失败" name="result">失败
+                            </label>
+                            <input type="text" name="nameTwo" placeholder="拨测情况说明">
                     </div>
                 </div>
                 <div class="save">
@@ -153,7 +193,7 @@
         </div>
 
 
-        </div>
+
         <div class="header_right">
             <div class="right_center">
                 <h2>预处理模板情况</h2>
@@ -234,5 +274,9 @@
 
     </section>
 </body>
+<script src="../jquery/jquery-3.2.1.min.js"></script>
+<script src="../jquery/bootstrap.min.js"></script>
+<script src="../jquery/bootstrap-multiselect.js"></script>
+<script src="../js/post.js"></script>
 
 </html>

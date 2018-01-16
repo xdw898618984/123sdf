@@ -61,15 +61,14 @@
                     <h2>模板案例概览</h2>
                 </div>
                 <div class="surveyTwo">
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-                    <p>特此汇报。温馨提示：内部信息，未经许可切勿私自传</p>
-
+                    <p class="sur">熊德伟 岗位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗
+                        位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位</p>
+                    <p class="sur"> 奥特曼岗位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗
+                        位岗位岗位岗位岗位岗位岗 位岗位岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位 岗位岗位岗位岗位岗位岗位 </p>
+                    <p class="sur">打怪兽 </p>
+                    <p class="sur">别复习啊 </p>
+                    <p class="sur">金刚 </p>
+                    <p class="sur">惠比特人 </p>
 
                 </div>
 
@@ -110,11 +109,11 @@
                         <div class="rank">
                             <span>故障级别:</span>
                             <label>
-                                <input name="rank4" type="radio" value="快讯" />快讯</label>
+                                <input class="rank1" name="rank4" type="radio" value="快讯" />快讯</label>
                             <label>
-                                <input name="rank4" type="radio" value="内部通报" checked="checked" />内部通报</label>
+                                <input class="rank2" name="rank4" type="radio" value="内部通报" />内部通报</label>
                             <label>
-                                <input name="rank4" type="radio" value="严重故障" />严重故障</label>
+                                <input class="rank3" name="rank4" type="radio" value="严重故障" />严重故障</label>
 
                         </div>
                         <div class="business">
@@ -125,16 +124,16 @@
                                 <input name="business1" type="radio" value="不影响" />不影响</label>
                         </div>
                         <div class="headline">
-                            <span>故障标题:</span>
-                            <input type="text" name="headline">
+                            <span id="title">故障标题:</span>
+                            <input type="text" name="headline" id="headline">
                         </div>
                         <div class=" time">
                             <span>发生时间:</span>
                             <span>2018/01/05(系统自动生成)</span>
                         </div>
                         <div class="appearance">
-                            <span>故障现象:</span>
-                            <textarea name="" id="" cols="30" rows="3"></textarea>
+                            <span id="appearance">故障现象:</span>
+                            <textarea name="" id="appearanceTo" cols="30" rows="3"></textarea>
                         </div>
 
                         <div class="cause">
@@ -193,58 +192,82 @@
                             <input type="text" name="monitoring1">
                         </div>
                         <div class="labs">
-                            <span>专业室:</span>
-                            <div class="labses">
+                            <div class="labOne">
+                                <span>专业室:</span>
+                            </div>
+                            <div class="labTwo">
+                                <div class="labses">
 
 
-                                <label>
-                                    <input name="labs1" type="checkbox" value="核维室" checked="checked" />核维室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="互联网室" checked="checked" />互联网室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="安增室" />安增室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="性能室" />性能室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="资配室" />资配室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="网管室" />网管室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="传动室" />传动室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="无忧室" />无忧室</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="信息系统部" />信息系统部</label>
-                                <label>
-                                    <input name="labs1" type="checkbox" value="客响室" />客响</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="核维室" checked="checked" />核维室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="互联室" checked="checked" />互联室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="安增室" />安增室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="性能室" />性能室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="资配室" />资配室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="网管室" />网管室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="传动室" />传动室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="无忧室" />无忧室</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="信息部" />信息部</label>
+                                    <label>
+                                        <input name="labs1" type="checkbox" value="客响室" />客响室</label>
 
+
+                                </div>
                                 <div class="chamber">
                                     <span class="del">
-                                        <span class="remove">省核维室信息联络人:</span>
+                                        <span class="remove">省核维室信息联络人: </span>
                                         <input type="text" name="object">
                                     </span>
                                     <span class="del">
-                                        <span class="remove">省互联网室信息联络人:</span>
+                                        <span class="remove">省互联室信息联络人: </span>
                                         <input type="text" name="object">
                                     </span>
                                 </div>
                             </div>
                         </div>
-
                         <div class="city">
+                            <div class="cityOne">
+                                <span>地市:</span>
+                            </div>
 
-                            <span>地市:</span>
-                            <select name="" id="city">
-                                <option value="1">广州</option>
-                                <option value="2">中山</option>
-                                <option value="3">深圳</option>
-                            </select>
+                            <div class="cityTwo">
+                                <select name="" id="city">
+                                    <option value="广州" selected="selected">广州</option>
+                                    <option value="佛山">佛山</option>
+                                    <option value="深圳">深圳</option>
+                                    <option value="汕头">汕头</option>
+                                    <option value="珠海">珠海</option>
+                                    <option value="韶关">韶关</option>
+                                    <option value="湛江">湛江</option>
+                                    <option value="肇庆">肇庆</option>
+                                    <option value="江门">江门</option>
+                                    <option value="茂名">茂名</option>
+                                    <option value="惠州">惠州</option>
+                                    <option value="梅州">梅州</option>
+                                    <option value="汕尾">汕尾</option>
+                                    <option value="河源">河源</option>
+                                    <option value="阳江">阳江</option>
+                                    <option value="清远">清远</option>
+                                    <option value="东莞">东莞</option>
+                                    <option value="中山">中山</option>
+                                    <option value="潮州">潮州</option>
+                                    <option value="揭阳">揭阳</option>
+                                </select>
 
-                            <span>广州联系人:</span>
-                            <input type="text" name="city1">
+                                <span>广州联系人:</span>
+                                <input type="text" name="city1">
 
+                            </div>
                         </div>
-
                         <div class="publish">
                             <span>发布范围:</span>
                             <div>
@@ -291,25 +314,27 @@
 
                 </div>
                 <div class="note_right">
-                    <h2>故障现象模板</h2>
-                    <div>
 
-                        <p>
-                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
-                        </p>
 
-                        <p>
-                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
-                        </p>
-                        <p>
-                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
-                        </p>
-                        <p>
-                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
-                        </p>
-                        <p>
-                            1.省监控发现综合监控上报告警、省监控接客服保障某某地区就业业务使用异常!
-                        </p>
+
+
+
+
+
+
+                    <h2 class="stencil">故障标题模板</h2>
+                    <div class="headline_content">
+                        <p>1.XX地区部分用户无法主/被/主被叫 </p>
+                        <p>2.XX地区部分用户呼入/呼出异常 </p>
+                        <p>3.XX地区部分用户2/4G上网使用异常 </p>
+                        <p>4.XX地区部分用户无法发送/接收短信 </p>
+                        <p>5.XX地区2、3、4G基站退服超门限 </p>
+                        <p>6.XX地区家宽业务使用异常 </p>
+                        <p>7.XX网元接通率低/高负荷/限呼 </p>
+                        <p>8.XX干线XX系统倒换/光缆故障/光功率低 </p>
+                        <p>9.XX地区XX机楼停电保障 10.省内多个地市XX网管长时间无告警上报 </p>
+                        <p>11.XX 网管系统名称使用异常 12.快讯|客户名称+业务级别+专线类型+故障/阶段/恢复 </p>
+
 
                     </div>
 
@@ -365,9 +390,9 @@
         <div class="mask">
             <div class="detail_content">
                 <div class="detail_up">
+                    <!-- <textarea name="" id="" cols="30" rows=""></textarea>
                     <textarea name="" id="" cols="30" rows=""></textarea>
-                    <textarea name="" id="" cols="30" rows=""></textarea>
-                    <textarea name="" id="" cols="30" rows=""></textarea>
+                    <textarea name="" id="" cols="30" rows=""></textarea> -->
                 </div>
                 <div class="detail_body">
                     <button class="ensure">确定</button>

@@ -1,34 +1,43 @@
-
 body {
     width: 100%;
     height: 100%;
     background-image: url(../img/bg.png);
-    scrollbar-arrow-color:#f2f2f3;  /*上下箭头*/
-    scrollbar-track-color:#1589ce;  /*底层背景色*/
-    scrollbar-face-color:#27aeff;   /*滚动条前景色*/
-    scrollbar-Shadow-color:#1589ce; /*滚动条边线色*/
-    overflow-y:scroll; overflow-x:hidden;table-layout: fixed;word-wrap:break-word;word-break:break-all;
+    scrollbar-arrow-color: #f2f2f3;
+    /*上下箭头*/
+    scrollbar-track-color: #1589ce;
+    /*底层背景色*/
+    scrollbar-face-color: #27aeff;
+    /*滚动条前景色*/
+    scrollbar-Shadow-color: #1589ce;
+    /*滚动条边线色*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    table-layout: fixed;
+    word-wrap: break-word;
+    word-break: break-all;
 }
+
 .nav h1 {
-
-
     margin: 16px auto;
     text-align: center;
     margin-bottom: 0px;
 }
+
 .nav h1 b {
     font-family: Microsoft YaHei;
 }
-.header {
 
+.header {
     margin-top: 38px;
     position: relative;
     height: 38px;
 }
-.header .newAdd:hover #add{
+
+.header .newAdd:hover #add {
     color: #befd78;
 }
-.header .newAdd:hover .header_left{
+
+.header .newAdd:hover .header_left {
     width: 44px;
     height: 41px;
     background: url("../img/imgone.png") -778px -239px;
@@ -36,86 +45,91 @@ body {
     left: 72px;
     top: 0px;
 }
-.header .header_left {
 
+.header .header_left {
     width: 44px;
     height: 41px;
     background: url("../img/imgone.png") -778px -288px;
     position: absolute;
     left: 72px;
     top: 0px;
-
-
 }
+
 .header .add {
     margin-left: 125px;
     font-family: Microsoft YaHei;
     font-size: 20px;
-
 }
+
 .header .a {
     display: inline;
 }
+
 .header .left {
-
-
     font-size: 20px;
     padding-left: 164px;
     position: relative;
-
 }
+
 .header .left p {
     color: #000000;
 }
+
 .header .left #date {
     width: 194px;
     height: 38px;
     font-size: 20px;
     border-radius: 6px;
-    border:1px solid #cedfe1;
+    border: 1px solid #cedfe1;
 }
-.header .left #date::before{
+
+.header .left #date::before {
     width: 37px;
     height: 38px;
-    content:url("../img/3.png");
+    content: url("../img/3.png");
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     /*z-index: -88;*/
 }
+
 .header .right {
     margin-left: 50px;
     font-size: 20px;
     padding-left: 104px;
 }
+
 .header .header_right {
     padding-right: 62px;
     float: right;
     font-size: 20px;
     position: relative;
-
 }
-.header .header_right:hover #search{
+
+.header .header_right:hover #search {
     color: #befd78;
 }
-.header .header_right:hover .header_search{
+
+.header .header_right:hover .header_search {
     width: 48px;
     height: 40px;
     background: url("../img/imgone.png") no-repeat -708px -236px;
     position: absolute;
-    top:0px;
-    left:-50px;
+    top: 0px;
+    left: -50px;
 }
-.header .header_search{
+
+.header .header_search {
     width: 45px;
     height: 37px;
     background: url("../img/imgone.png") no-repeat -710px -288px;
     position: absolute;
-    top:0px;
-    left:-50px;
+    top: 0px;
+    left: -50px;
 }
+
 #content {
     vertical-align: middle;
     width: 192px;
@@ -126,7 +140,8 @@ body {
     border-top-width: 1px;
     margin-top: -6px;
 }
-#search{
+
+#search {
     font-size: 20px;
     font-family: Microsoft YaHei;
     line-height: 38px;
@@ -134,16 +149,20 @@ body {
 
 
 /*matter*/
+
 .matter {
     margin-top: 85px;
     height: 424px;
-    width: ;
+    width: 99%;
     margin-left: 10px;
     line-height: 34px;
     overflow: auto;
-    overflow-x: hidden;
-
+    border: 1px solid #f2f2f3;
+    box-sizing: border-box;
+    border-radius: 10px;
+ 
 }
+
 .results-ul {
     float: left;
     text-align: center;
@@ -151,148 +170,165 @@ body {
     overflow-y: auto;
     height: 100%;
     width: 100%;
-
 }
-.results-ul::-webkit-scrollbar {/*滚动条整体样式*/
-    width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+
+.results-ul::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 7px;
+    /*高宽分别对应横竖滚动条的尺寸*/
     height: 7px;
 }
-.results-ul::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+
+.results-ul::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
     border-radius: 5px;
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
-.results-ul::-webkit-scrollbar-track {/*滚动条里面轨道*/
-    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+
+.results-ul::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
-.results-ul > li {
+
+.results-ul>li {
     padding-left: 34px;
     width: 100%;
     float: left;
     margin: 5px auto;
-
 }
-.results-ul > li span {
+
+.results-ul>li span {
     display: inline-block;
     float: left;
     padding: 5px 0;
     height: 34px;
     margin: 5px 0px 5px 0;
 }
-.results-ul > li:first-child {
 
-}
+.results-ul>li:first-child {}
+
 .num1 {
     width: 15%;
-
 }
+
 .num2 {
     width: 10%;
-
 }
+
 .num3 {
     width: 25%;
-
 }
+
 .num4 {
     width: 20%;
-
 }
-.num4>.num{
-    border-right:1px solid #727272;
+
+.num4>.num {
+    border-right: 1px solid #727272;
     padding: 0 18px;
-
 }
+
 .num4>a:last-child {
     padding-left: 18px;
 }
+
 .num5 {
     width: 15%;
+}
 
+.num5>a:first-of-type {
+    border-right: 1px solid #727272;
+    padding-right: 18px;
 }
-.num5>a:first-of-type{
-    border-right:1px solid #727272;
-    padding-right:18px;
-}
-.num5>a:last-of-type{
 
-    padding-left:18px;
+.num5>a:last-of-type {
+    padding-left: 18px;
 }
-.num6{
+
+.num6 {
     width: 15%;
     position: relative;
-
+    overflow: hidden;
 }
-.num6 .delete{
+
+.num6 .delete {
     width: 24px;
     height: 24px;
     background: url("../img/14.png")no-repeat 0 0;
     position: absolute;
-    top:11px;
+    top: 11px;
     left: 50px;
 }
 
-.num6:hover .delete{
-
+.num6:hover .delete {
     width: 24px;
     height: 24px;
     background: url("../img/14.png")no-repeat 0 -38px;
     position: absolute;
-    top:11px;
+    top: 11px;
     left: 50px;
 }
-.num6:hover .deleteTo{
+
+.num6:hover .deleteTo {
     color: #befd78;
 }
-#down::before{
-    content:'全选';
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 67px;
-    height: 20px;
-    color: #3f3f3f;
 
-}
-#up::before{
-    content:'批量删除';
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 170px;
-    width: 37px;
-    height: 10px;
-    line-height: 15px;
-    color: #3f3f3f;
-}
+
+
+
+
+
+
+   
+
+
+
+
+
+    #up {
+        position: absolute;
+        top: 5px;
+        left: 60%;
+        width: 37px;
+        height: 37px;
+        line-height: 15px;
+        color: #3f3f3f;
+    }
+
+
+
+
 select {
     width: 34px;
     height: 35px;
     /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
     border: solid 1px #000;
     /*很关键：将默认的select选择框样式清除*/
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     /*在选择框的最右侧中间显示小箭头图片*/
-
     /*background: url("../img/6.png") no-repeat   ;*/
     /*为下拉小箭头留出一点位置，避免被文字覆盖*/
     padding-right: 14px;
-    background-color: rgb(162,233,255);
+    background-color: rgb(162, 233, 255);
     opacity: 0.8;
     font-size: 14px;
     border-radius: 5px;
-
 }
-/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
-select::-ms-expand { display: none; }
 
-input{
-    background-color: rgb(162,233,255);
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+
+select::-ms-expand {
+    display: none;
+}
+
+input {
+    background-color: rgb(162, 233, 255);
     opacity: 0.8;
     font-size: 14px;
     border-radius: 5px;
