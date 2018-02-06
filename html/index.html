@@ -47,16 +47,17 @@
         </div>
 
     </section>
-    <section class="matter" >
+    <section class="matter">
         <ul class="results-ul">
             <li class="setmp" style="font-size: 20px;position: relative;">
                 <span style="float: left;position: absolute; top: 0px; left:25px;">
-                <label for="">
-                    <input class="up" type="checkbox" name="all" value="全选" > 全选
-                </label>
-               </span>
+                    <label class="all">
+                        <input class="up" type="checkbox" name="all" value="全选"> 全选
+                    </label>
+
+                </span>
                 <!-- <p id="down" style="position: relative; float:left; display:inline;font-size: 14px;"></p> -->
-                <span class="num1">
+                <!-- <span class="num1">
                     <b>故障时间</b>
                 </span>
                 <span class="num2">
@@ -74,36 +75,30 @@
                 <span class="num6" id="num6" style="position: relative; float: left;display: inline;font-size: 14px;">
                     <b>操作</b>
                     <p id="up">批量删除</p>
-                </span>
+                </span> -->
+                <div class="click" style=" height: 50px; margin-left: 10px;  border-radius: 10px;margin-right: 40px;">
+                    <span class="num1"><b>故障时间</b></span>
+                    <span class="num2" contenteditable="true"><b>故障等级</b></span>
+                    <span class="num3" contenteditable="true"> <b>故障标题</b></span>
+                    <span class="num4">
+                            <b>值班长</b>
+                    </span>
+                    <span class="num5">
+                            <b>岗位</b>
 
+                    </span>
+                    <span class="num6">
+
+                            <b>操作</b>
+                            <p id="up">批量删除</p>
+                  
+
+                    </span>
+                </div>
             </li>
-            <hr style="border: 1px solid #37b3db">
-            <hr style="border: 1px  solid #e3f8ff">
-            <!-- <li style="position:relative; margin: 5px 0; height: 34px;">
-            <input type="checkbox" style="float: left;position: absolute; top: 23px; left:34px;">
-            <div>
-                <span class="num1">2017/12/12 18:04</span>
-                <span class="num2">内部通报</span>
-                <span class="num3">待定待定待定待定待定待定待定</span>
-                <span class="num4">
-                        <a class="num" href="./foreman.html" target="_blank">新</a>
-                        <a class="num" href="./foreman.html" target="_blank">升级</a>
-                        <a class="num" href="./foreman.html" target="_blank">阶段</a>
-                        <a href="./foreman.html" target="_blank">销毁</a>
-                </span>
-                <span class="num5">
-                        <a href="./post.html" target="_blank">大无线</a>
-                        <a href="./post.html" target="_blank">大核心</a>
-                </span>
-                <span class="num6">
-                <i class="delete" id='delete'></i>
-
-        
-                <p>删除</p>
-            </span>
-            </div>
-         </li> -->
-
+            <hr style="border: 1px solid #37b3db; width:96%;margin:0 auto">
+            <hr style="border: 1px  solid #e3f8ff; width:96%;margin:0 auto">
+       
 
         </ul>
 

@@ -14,82 +14,111 @@
 
 <body>
     <section class="nav">
-        <div>
-            <h1>岗位信息上报工具</h1>
-        </div>
+        <h1>岗位上报信息工具</h1>
     </section>
-    <section class="header">
-        <div class="header_left">
-            <h2>岗位上报信息编辑</h2>
 
-            <div class="content">
-                <div class="warning">
-                    <span>告警情况: </span>
-                    <input type="text" name="number" id="warn">
+    <section class="content">
+        <div class="up">
+
+
+            <div class="left">
+
+                <div class="quarters">
+                    <h2 class="quarters_content">岗位上报信息编辑</h2>
                 </div>
-                <div class="pretreatment">
-                    <span>预处理情况:</span>
-                    <div class="text_enter">
-                        <textarea name="" id="oneT" cols="30" rows="3"></textarea>
-                        <p>
+
+                <div class="left_content">
+                    <div class="matter1">
+                        <div class="alarm">告警情况:</div>
+                        <label>
+                            <input type="text" name="number" id="warn">
+                        </label>
+                    </div>
+                    <div class="matter2">
+                        <div class="pretreatment">
+                            预处理情况:
+                        </div>
+                        <div class="pretreatment-content">
+                            <textarea name="" id="oneT" cols="30" rows="3"></textarea>
+
                             <textarea name="" id="twoT" cols="30" rows="3"></textarea>
-                        </p>
-                        <textarea name="" id="threeT" cols="30" rows="3"></textarea>
+
+                            <textarea name="" id="threeT" cols="30" rows="3"></textarea>
+                        </div>
                     </div>
-                </div>
+                    <div class="matter3">
 
-                <div class="trouble">
-                    <span>是否有故障时限:</span>
-                    <label for="">
-                        <input type="radio" value="有" name="timer" checked>有
-                    </label>
-                    <label for="">
-                        <input type="radio" value="无" name="timer">无
-                    </label>
-                </div>
-                <div class="reason">
-                    <span>故障原因:</span>
-                    <input type="text" name="reason">
-                </div>
-             
-                <div class="time">
-                    <span>故障时限:</span>
 
-                    <div class="time_enter">
-                        <textarea name="" id="timeT" cols="30" rows="3"></textarea>
+
+                        <div class="trouble">是否有故障:</div>
+
+                        <div class="trouble_content">
+                            <label for="" style="margin-right: 10px;">
+                                <input type="radio" value="有" name="timer" checked>有
+                            </label>
+                            <label for="">
+                                <input type="radio" value="无" name="timer">无
+                            </label>
+                        </div>
+
                     </div>
-                </div>
 
-                <div class="complain">
-                    <span>投诉情况:</span>
-                    <input type="text" name="complain">
-                </div>
-                <div class="dispose">
-                    <span>处理情况:</span>
-                    <input type="text" name="dispose">
-                </div>
-                <div class="project">
-                    <span>工程核查:</span>
-                    <label for="">
 
-                        <input type="radio" value="无" name="project" checked>无
-                    </label>
-                    <label for="">
 
-                        <input type="radio" value="有" name="project">有
+                    <div class="matter3_4">
+                        <div class=" reason">故障原因:</div>
+                        <div class="reason_content">
+                            <label for="">
+                                <input type="text" name="reason">
+                            </label>
+                        </div>
 
-                    </label>
+                    </div>
+                    <div class="matter4">
+                        <div class="time"> 故障时限:</div>
+                        <div class="time_content">
+                            <textarea name="" id="timeT" cols="30" rows="3"></textarea>
+                        </div>
 
-                    <label for="">
-                        <input type="text" name="projectTwo">
-                    </label>
-                </div>
-                <div class="case">
-                    <span>报障情况:</span>
 
-                    <div class="caseOne">
-                        <div class="case_enter">
 
+                    </div>
+                    <div class="matter5">
+                        <div class="complain">投诉情况:</div>
+                        <div class="complain_content">
+
+                            <input type="text" name="complain">
+                        </div>
+
+                    </div>
+                    <div class="matter6">
+                        <div class="dispose">处理情况:</div>
+                        <div class="dispose_content">
+                            <input type="text" name="dispose">
+                        </div>
+                    </div>
+                    <div class="matter7">
+                        <div class="project">工程核查:</div>
+                        <div class="project_content">
+
+                            <div class="projectOne">
+                                <label for="" style="margin-right:10px">
+                                    <input type="radio" value="无" name="project" checked>无
+                                </label>
+                                <label for="">
+                                    <input type="radio" value="有" name="project">有
+                                </label>
+                            </div>
+                            <div class="projectTwo">
+                                <input type="text" name="projectTwo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="matter8">
+
+                        <div class="case">保障情况:</div>
+
+                        <div class="case_content">
                             <label for="">
                                 <input type="checkbox" name="case" value="核维室" checked="checked">核维室</label>
 
@@ -119,160 +148,199 @@
                             <label for="">
                                 <input type="checkbox" name="case" value="信息部">信息部
                             </label>
-
                         </div>
-                        <div class="case_down">
-                                <div class="del">
-                                    <span class="postOne">省核维室信息联络人:</span>
-                                    <input type="text" name="post" style="width:130px;height:24px">
-                                </div><div class="del">
-                                    <span class="postOne">省互联室信息联络人:</span>
-                                    <input type="text" name="post" style="width:130px;height:24px">
+                    </div>
+
+
+                    <div class="matter9">
+                        <div class="del">
+                            <span class="postOne">省核维室信息联络人:</span>
+                            <input type="text" name="post">
+                        </div>
+                        <div class="del">
+                            <span class="postOne">省互联室信息联络人:</span>
+                            <input type="text" name="post">
+                        </div>
+                    </div>
+                    <div class="matter10">
+
+                        <div class="city">地市:</div>
+
+                        <div class="city_content">
+                            <div class="city_content_left">
+
+                                <select id="example-multiple-selected" multiple="multiple">
+                                    <option value="广州" selected="selected">广州</option>
+                                    <option value="佛山">佛山</option>
+                                    <option value="深圳">深圳</option>
+                                    <option value="汕头">汕头</option>
+                                    <option value="珠海">珠海</option>
+                                    <option value="韶关">韶关</option>
+                                    <option value="湛江">湛江</option>
+                                    <option value="肇庆">肇庆</option>
+                                    <option value="江门">江门</option>
+                                    <option value="茂名">茂名</option>
+                                    <option value="惠州">惠州</option>
+                                    <option value="梅州">梅州</option>
+                                    <option value="汕尾">汕尾</option>
+                                    <option value="河源">河源</option>
+                                    <option value="阳江">阳江</option>
+                                    <option value="清远">清远</option>
+                                    <option value="东莞">东莞</option>
+                                    <option value="中山">中山</option>
+                                    <option value="潮州">潮州</option>
+                                    <option value="揭阳">揭阳</option>
+                                </select>
+                            </div>
+                            <div class="city_content_right">
+                                <div class="city_content_right_content">
+                                    <span class="contacts">广州联系人</span>
+                                    <input class="contactsOne" type="text">
                                 </div>
                             </div>
-                    </div>
-                 
-                </div>
-                <div class="city">
-                    <div>
-                        <span>地市:</span>
-                        <select id="example-multiple-selected" multiple="multiple">
-                            <option value="广州" selected="selected">广州</option>
-                            <option value="佛山">佛山</option>
-                            <option value="深圳">深圳</option>
-                            <option value="汕头">汕头</option>
-                            <option value="珠海">珠海</option>
-                            <option value="韶关">韶关</option>
-                            <option value="湛江">湛江</option>
-                            <option value="肇庆">肇庆</option>
-                            <option value="江门">江门</option>
-                            <option value="茂名">茂名</option>
-                            <option value="惠州">惠州</option>
-                            <option value="梅州">梅州</option>
-                            <option value="汕尾">汕尾</option>
-                            <option value="河源">河源</option>
-                            <option value="阳江">阳江</option>
-                            <option value="清远">清远</option>
-                            <option value="东莞">东莞</option>
-                            <option value="中山">中山</option>
-                            <option value="潮州">潮州</option>
-                            <option value="揭阳">揭阳</option>
-                        </select>
-                    </div>
-                    <div class="linkman">
-                        <span>
-                            <span class="contacts">广州联系人</span>
-                            <input class="contactsOne" type="text" style="width:100px;height:24px">
-                        </span>
-                    </div>
-                    <div style="clear:both"></div>
-                </div>
 
-                <div class="testing">
-                    <span>拨测结果:</span>
-                    <div class="testing_enter">
-                    
+
+                        </div>
+                    </div>
+                    <div class="matter11">
+                        <div class="testing">拨测结果:</div>
+
+
+                        <div class="testing_content">
                             <label for="">
-                                <input type="radio" value="正常" name="result">正常
+                                <input type="radio" value="正常" name="result" class="run">正常
                             </label>
                             <input type="text" name="nameOne" placeholder="拨测情况说明">
-                        <br>
-                            <label for="">
-                                <input type="radio" value="失败" name="result">失败
+                            <br>
+                            <label for="" style="margin-top:5px">
+                                <input type="radio" value="失败" name="result" class="run">失败
                             </label>
                             <input type="text" name="nameTwo" placeholder="拨测情况说明">
+                        </div>
+
+                    </div>
+
+
+                    <div class="matter12">
+
+                        <div class="save">
+                            <!-- <img src="" alt=""> -->
+                            <h3>保存推送
+                                <i class="push"></i>
+                            </h3>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="right">
+
+                <div class="template">
+                    <h2>预处理情况模板</h2>
+                </div>
+
+                <div class="template_content">
+
+                    <div class="right_content">
+
+                        <p class="above">1、家宽故障</p>
+                        <p>检查OLT、BRAS下带用户数</p>
+                        <p>上联SW、BNG端口流量</p>
+                        <p>互感平台用户是否在线</p>
+                        <p>工程核查</p>
+
+                        <p class="second">2、核心网故障</p>
+                        <p>智能研判创建案例bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbl</p>
+                        <p>当前网页性能指标</p>
+                        <p>工程核查</p>
+                        <p>拨测</p>
+
+                        <p class="below">3、互联网故障</p>
+                        <p>核查端口状态/流量/光功率/描述</p>
+                        <p>查链路数，配对设备状态</p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <hr class="striping"></hr>
+        <div class="down">
+            <div class="footer">
+                <h2>OMC语音翻译</h2>
+            </div>
+            <div class="telephone">
+                <div class="tele_left">
+                    <span>主叫号码:</span>
+                    <input type="text" class="dialing">
+                </div>
+                <div class="tele_center">
+                    <span>被叫号码:</span>
+                    <input type="text" class="called">
+                </div>
+                <div class="tele_right">
+                    <div class="a">
+                        <p>确然开始
+                            <i class="front"></i>
+                        </p>
+
+                    </div>
+                    <div class="b">
+                        <p>确然结束
+                            <i class="rear"></i>
+                        </p>
                     </div>
                 </div>
-                <div class="save">
-                    <div>保存推送
-                        <i class="push"></i>
+
+
+            </div>
+
+            <div class="voice">
+                <div class="voice_content">
+                    <div class="voice_left">
+                        <div class="interpret_left">
+                            <div>左边:</div>
+
+                        </div>
+                        <div class="interpret_left_content">
+                            <img src="../img/2.png" alt="">
+                            <i class="dialings"></i>
+                        </div>
+                    </div>
+                    <div class="voice_right">
+
+
+                        <div class="interpret_right_content">
+                            <img src="../img/5.png" alt="">
+                            <i class="called"></i>
+                        </div>
+                        <div class="interpret_right">
+                            <div>:右边</div>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
 
         </div>
 
 
-
-        <div class="header_right">
-            <div class="right_center">
-                <h2>预处理模板情况</h2>
-                <div class="right_content">
-
-                    <p class="above">1、家宽故障</p>
-                    <p>检查OLT、BRAS下带用户数</p>
-                    <p>上联SW、BNG端口流量</p>
-                    <p>互感平台用户是否在线</p>
-                    <p>工程核查</p>
-
-                    <p class="second">2、核心网故障</p>
-                    <p>智能研判创建案例</p>
-                    <p>当前网页性能指标</p>
-                    <p>工程核查</p>
-                    <p>拨测</p>
-                    <p class="below">3、互联网故障</p>
-                    <p>核查端口状态/流量/光功率/描述</p>
-                    <p>查链路数，配对设备状态</p>
-
-                </div>
-            </div>
-
-
-        </div>
 
     </section>
-    <section class="footer">
-        <h2>OMC语音翻译</h2>
-        <div class="telephone">
-            <span>主叫号码:</span>
-            <input type="text">
-            <span>被叫号码:</span>
-            <input type="text">
-            <div class="telephone_right">
-                <div class="a">
-                    <span>确然结束
-                        <i class="front"></i>
-                    </span>
 
-                </div>
-                <div class="b">
-                    <span>确然开始
-                        <i class="rear"></i>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="footer_enter">
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
-            <div>fjsdklfjlksdjfklsdjflsdfjkl</div>
 
-        </div>
-
-    </section>
 </body>
 <script src="../jquery/jquery-3.2.1.min.js"></script>
 <script src="../jquery/bootstrap.min.js"></script>

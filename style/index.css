@@ -157,10 +157,9 @@ body {
     margin-left: 10px;
     line-height: 34px;
     overflow: auto;
-    border: 1px solid #f2f2f3;
-    box-sizing: border-box;
+    background: url("../img/bg1.png");
+    background-size: 100% 100%;
     border-radius: 10px;
- 
 }
 
 .results-ul {
@@ -208,8 +207,9 @@ body {
     margin: 5px 0px 5px 0;
 }
 
-.results-ul>li:first-child {}
-
+.all{
+    font-size: 14px
+}
 .num1 {
     width: 15%;
 }
@@ -276,30 +276,17 @@ body {
     color: #befd78;
 }
 
+#up {
+    position: absolute;
+    top: 5px;
+    left: 60%;
+    width: 37px;
+    height: 37px;
+    line-height: 15px;
+    color: #3f3f3f;
 
-
-
-
-
-
-   
-
-
-
-
-
-    #up {
-        position: absolute;
-        top: 5px;
-        left: 60%;
-        width: 37px;
-        height: 37px;
-        line-height: 15px;
-        color: #3f3f3f;
-    }
-
-
-
+    font-size: 14px;
+}
 
 select {
     width: 34px;
